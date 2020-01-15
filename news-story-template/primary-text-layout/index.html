@@ -17,16 +17,21 @@
         <h1>{{ story.title }}</h1>
         <h2>{{ story.subtitle }}</h2>
         <h3>{{ story.date }}</h3>
+
+      <!-- Tags -->
+      <span v-for="tag in story.tags" class="tags">{{ tag }}</span>
       </div>
 
       <!-- Horizontal Line -->
-      <div id="lineAboveTeaser"></div>
+      <div id="lineAboveImage"></div>
 
       <!-- Image -->
-      <!-- <span v-for="tag in story.tags">{{ tag }}</span>
       <img v-bind:src="story.image.url">
-      {{ story.image.caption }}
-      <a v-bind:href="story.source.url">{{ story.source.name }}</a> -->
+      <span class="caption">{{ story.image.caption }}</span>
+      <a v-bind:href="story.source.url" class="articleSource">{{ story.source.name }}</a>
+
+      <!-- Horizontal Line -->
+      <div id="lineAboveTeaser"></div>
 
       <!-- Teaser -->
       <span v-html="story.teaser" class="teaser"></span>
