@@ -10,15 +10,19 @@
     <div id="news-template" v-cloak>
 
       <!-- Main Story -->
-      <h1>{{ story.title }}</h1>
-      <h2>{{ story.subtitle }}</h2>
-      <h3>{{ story.date }}</h3>
+      <div class="header">
+        <h1>{{ story.title }}</h1>
+        <h2>{{ story.subtitle }}</h2>
+        <h3>{{ story.date }}</h3>
+        <div class="line"></div>
+      </div>
       <!-- <span v-for="tag in story.tags">{{ tag }}</span>
       <img v-bind:src="story.image.url">
       {{ story.image.caption }}
-      <a v-bind:href="story.source.url">{{ story.source.name }}</a>
-      <span v-html="story.teaser"></span> -->
-      <span v-html="story.content"></span>
+      <a v-bind:href="story.source.url">{{ story.source.name }}</a> -->
+      <span v-html="story.teaser" class="teaser"></span>
+      <div class="line"></div>
+      <span v-html="story.content" class="content"></span>
 
       <!-- Related Stories-->
       <!-- <ul>
