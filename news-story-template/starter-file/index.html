@@ -6,11 +6,11 @@
   </head>
   <body>
     <div id="news-template" v-cloak>
-      
+
       <!-- Main Story -->
-      {{ story.title }}
-      {{ story.subtitle }}
-      {{ story.date }}
+      <h1>{{ story.title }}</h1>
+      <h2>{{ story.subtitle }}</h2>
+      <h3>{{ story.date }}</h3>
       <span v-for="tag in story.tags">{{ tag }}</span>
       <img v-bind:src="story.image.url">
       {{ story.image.caption }}
