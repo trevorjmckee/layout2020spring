@@ -14,22 +14,22 @@
       <h1>{{ story.title }}</h1>
       <h2>{{ story.subtitle }}</h2>
       <h3>{{ story.date }}</h3>
-      <!-- <span v-for="tag in story.tags">{{ tag }}</span>
+      <span v-for="tag in story.tags">{{ tag }}</span>
       <img v-bind:src="story.image.url">
       {{ story.image.caption }}
       <a v-bind:href="story.source.url">{{ story.source.name }}</a>
-      <span v-html="story.teaser"></span> -->
+      <span v-html="story.teaser"></span>
       <span v-html="story.content"></span>
 
       <!-- Related Stories-->
-      <!-- <ul>
+      <ul>
         <li v-for="relatedStory in relatedStories">
           <div v-on:click="load(relatedStory)">
             {{ relatedStory.title }}
             <img v-bind:src="relatedStory.image.url">
           </div>
         </li>
-      </ul> -->
+      </ul>
 
       <!-- Useful debugging info, you can comment this section out when you don't need it. -->
       <pre>The story object: {{ story | json }}</pre>
