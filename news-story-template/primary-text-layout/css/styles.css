@@ -162,6 +162,8 @@ h3 {
 /* .caption (image caption) */
 
 .caption {
+  display: block;
+  
   font-family: fira-sans, sans-serif;
   font-size: .8rem;
   font-weight: 400;
