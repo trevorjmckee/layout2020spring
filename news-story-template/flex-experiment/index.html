@@ -11,7 +11,7 @@
     <div id="news-template" v-cloak>
 
       <!-- Main Story -->
-
+      <main>
       <!-- Header -->
       <header>
         <h1>{{ story.title }}</h1>
@@ -45,17 +45,21 @@
       <!-- Horizontal Line -->
       <div id="lineAboveRelatedStories"></div>
 
-      <!-- Related Stories-->
-      <h4>Related stories</h4>
+      </main>
 
-      <ul class="relatedStories">
-        <li v-for="relatedStory in relatedStories" class="relatedStory">
-          <div v-on:click="load(relatedStory)">
-            <p class="relatedStoryTitle">{{ relatedStory.title }}</p>
-            <img v-bind:src="relatedStory.image.url">
-          </div>
-        </li>
-      </ul>
+      <!-- Related Stories-->
+      <aside class="relatedStories">
+        <h4>RELATED STORIES</h4>
+
+        <ul class="relatedStories">
+          <li v-for="relatedStory in relatedStories" class="relatedStory">
+            <div v-on:click="load(relatedStory)">
+              <p class="relatedStoryTitle">{{ relatedStory.title }}</p>
+              <img v-bind:src="relatedStory.image.url">
+            </div>
+          </li>
+        </ul>
+      </aside>
 
       <!-- Useful debugging info, you can comment this section out when you don't need it. -->
       <!-- <pre>The story object: {{ story | json }}</pre>
