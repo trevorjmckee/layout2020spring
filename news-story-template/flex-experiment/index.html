@@ -6,6 +6,24 @@
     <style>[v-cloak] { display: none; }</style>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/tha4zph.css">
+
+    <script>
+
+        teaserChecker() {
+        var teaser = document.querySelectory(".teaser").innerHTML;
+        var lineOne = document.querySelectory("#lineAboveTeaser");
+        var lineTwo = document.querySelectory("#lineBelowTeaser");
+
+        alert('Here is some text');
+
+        if (teaser.length == 0) {
+          lineOne.classList.add("hidden");
+          lineTwo.classList.add("hidden");
+        }
+      }
+
+    </script>
+
   </head>
   <body>
     <div id="news-template" v-cloak>
@@ -23,7 +41,7 @@
       </header>
 
       <!-- Horizontal Line -->
-      <div id="lineAboveImage"></div>
+      <div class="line" id="lineAboveImage"></div>
 
       <!-- Image -->
       <img v-bind:src="story.image.url">
@@ -31,19 +49,19 @@
       <a v-bind:href="story.source.url" class="articleSource">{{ story.source.name }}</a>
 
       <!-- Horizontal Line -->
-      <div id="lineAboveTeaser"></div>
+      <div class="line" id="lineAboveTeaser"></div>
 
       <!-- Teaser -->
-      <span v-html="story.teaser" class="teaser"></span>
+      <span v-html="story.teaser" class="teaser" onload="teaserChecker()"></span>
 
       <!-- Horizontal Line -->
-      <div id="lineBelowTeaser"></div>
+      <div class="line" id="lineBelowTeaser"></div>
 
       <!-- Content -->
       <span v-html="story.content" class="content"></span>
 
       <!-- Horizontal Line -->
-      <div id="lineAboveRelatedStories"></div>
+      <div class="line" id="lineAboveRelatedStories"></div>
 
       </main>
 
@@ -54,8 +72,10 @@
         <ul class="relatedStories">
           <li v-for="relatedStory in relatedStories" class="relatedStory">
             <div v-on:click="load(relatedStory)">
+              <div class="related-story-image-container">
+                <img v-bind:src="relatedStory.image.url" class="related-story-image">
+              </div>
               <p class="relatedStoryTitle">{{ relatedStory.title }}</p>
-              <img v-bind:src="relatedStory.image.url">
             </div>
           </li>
         </ul>
@@ -70,5 +90,6 @@
     <!-- Scripts here are what load the Vue library, and the actual story content. -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://abesiemsen.github.io/layout2020spring-resources/projects/news-story-template/data.js"></script>
+
   </body>
 </html>
