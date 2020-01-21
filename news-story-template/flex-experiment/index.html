@@ -6,24 +6,6 @@
     <style>[v-cloak] { display: none; }</style>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/tha4zph.css">
-
-    <script>
-
-        teaserChecker() {
-        var teaser = document.querySelectory(".teaser").innerHTML;
-        var lineOne = document.querySelectory("#lineAboveTeaser");
-        var lineTwo = document.querySelectory("#lineBelowTeaser");
-
-        alert('Here is some text');
-
-        if (teaser.length == 0) {
-          lineOne.classList.add("hidden");
-          lineTwo.classList.add("hidden");
-        }
-      }
-
-    </script>
-
   </head>
   <body>
     <div id="news-template" v-cloak>
@@ -52,7 +34,7 @@
       <div class="line" id="lineAboveTeaser"></div>
 
       <!-- Teaser -->
-      <span v-html="story.teaser" class="teaser" onload="teaserChecker()"></span>
+      <span v-html="story.teaser" class="teaser"></span>
 
       <!-- Horizontal Line -->
       <div class="line" id="lineBelowTeaser"></div>
@@ -92,4 +74,25 @@
     <script src="https://abesiemsen.github.io/layout2020spring-resources/projects/news-story-template/data.js"></script>
 
   </body>
+
+  <script>
+
+      function teaserChecker() {
+      var teaser = document.querySelector(".teaser").innerHTML;
+      var lineOne = document.querySelector("#lineAboveTeaser");
+      var lineTwo = document.querySelector("#lineBelowTeaser");
+
+      alert('Hello! Your code is running');
+
+      if (teaser == "") {
+        lineOne.classList.add("hidden");
+        lineTwo.classList.add("hidden");
+      }
+    }
+
+    window.onload = teaserChecker;
+    body.addEventListener("click", teaserChecker);
+
+  </script>
+
 </html>
