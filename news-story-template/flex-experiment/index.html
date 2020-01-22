@@ -82,16 +82,13 @@
       var lineOne = document.querySelector("#lineAboveTeaser");
       var lineTwo = document.querySelector("#lineBelowTeaser");
 
-      alert('Hello! Your code is running');
-
       if (teaser == "") {
         lineOne.classList.add("hidden");
         lineTwo.classList.add("hidden");
       }
     }
 
-    window.onload = teaserChecker;
-    body.addEventListener("click", teaserChecker);
+    document.addEventListener("DOMSubtreeModified", teaserChecker);
 
   </script>
 
