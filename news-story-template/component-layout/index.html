@@ -16,7 +16,7 @@
         <div class="safe-area">
           <div class="title">
             <h1>{{ story.title }}</h1>
-            <h2>{{ story.subtitle }}</h2>
+            <h2 class="subtitle">{{ story.subtitle }}</h2>
         </div>
 
         <div class="info">
@@ -42,27 +42,27 @@
           <span v-html="story.content" class="content"></span>
 
           <!-- Tags -->
-          <p>TAGS</p><span v-for="tag in story.tags" class="tags">{{ tag }}</span>
+          <span v-for="tag in story.tags" class="tags">{{ tag }}</span>
         </div>
       </section>
 
       <!-- Related Stories-->
       <section class="component">
         <div class="safe-area">
-          <aside class="relatedStories">
             <h4>READ MORE</h4>
             <!-- Line -->
             <div class="line"></div>
 
-            <ul class="relatedStories">
-              <li v-for="relatedStory in relatedStories" class="relatedStory">
-                <div v-on:click="load(relatedStory)">
-                  <img v-bind:src="relatedStory.image.url" class="related-story-image">
-                  <p class="relatedStoryTitle">{{ relatedStory.title }}</p>
-                </div>
-              </li>
-            </ul>
-          </aside>
+          <div class="related-story-block">
+            <div v-for="relatedStory in relatedStories" class="related-story">
+              <div v-on:click="load(relatedStory)">
+                        <p class="relatedStoryTitle">{{ relatedStory.title }}</p>
+                        <div class="related-story-image-container">
+                          <img v-bind:src="relatedStory.image.url" class="related-story-image">
+                        </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -76,7 +76,7 @@
 
   <script>
 
-      function teaserChecker() {
+      function checker() {
       var teaser = document.querySelector(".teaser").innerHTML;
       var line = document.querySelector(".line");
 
@@ -85,9 +85,18 @@
       } else {
         line.classList.remove("hidden");
       }
-    }
 
-    document.addEventListener("DOMSubtreeModified", teaserChecker);
+      var subtitle = document.querySelector(".subtitle").innerHTML;
+      var attributeAdder = document.querySelector(".subtitle");
+
+      if (subtitle == "") {
+        attributeAdder.classList.add("hidden");
+      } else {
+        attributeAdder.classList.remove("hidden");
+      }
+      }
+
+    document.addEventListener("DOMSubtreeModified", checker);
 
   </script>
 

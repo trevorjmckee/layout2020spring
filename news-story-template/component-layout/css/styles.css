@@ -100,6 +100,11 @@ h2 {
   max-width: 70%;
 }
 
+h2.hidden {
+  padding: 0;
+  padding-bottom: 30px;
+}
+
 
 
 /* h3 (date) */
@@ -223,7 +228,7 @@ h4 {
   padding: 0;
 }
 
-ul.relatedStories {
+.related-story-block {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
@@ -232,22 +237,20 @@ ul.relatedStories {
   padding: 0;
 }
 
-li.relatedStory {
-  position: relative;
-  list-style-type: none;
+.related-story {
   width: 45%;
-  padding: 2.5%;
-}
-
-li.relatedStory img {
-  width: 100%;
-  object-fit: cover;
+  margin: 2.5%;
 }
 
 p.relatedStoryTitle {
-  margin: 0;
-  padding: 15px;
-  box-sizing: border-box;
+  font-weight: 700;
 
-  background-color: rgb(255, 190, 0);
+  margin: 0;
+  padding: 0 0 5px 0;
+  box-sizing: border-box;
+}
+
+.related-story-image-container img {
+  width: 100%;
+  object-fit: cover;
 }
