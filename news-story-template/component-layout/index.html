@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>News Story Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>[v-cloak] { display: none; }</style>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tha4zph.css">
+  </head>
+  <body>
+    <div id="news-template" v-cloak>
+
+      <!-- Header -->
+      <header class="component">
+        <img v-bind:src="story.image.url">
+        <div class="safe-area">
+          <div class="title">
+            <h1>{{ story.title }}</h1>
+            <h2>{{ story.subtitle }}</h2>
+        </div>
+
+        <div class="info">
+          <h3>{{ story.date }}</h3>
+          <span class="caption">{{ story.image.caption }}</span>
+          <a v-bind:href="story.source.url" class="articleSource">{{ story.source.name }}</a>
+        </div>
+      </header>
+
+      <!-- Content -->
+      <section class="component content">
+        <div class="safe-area">
+          <!-- Line -->
+          <div class="line"></div>
+
+          <!-- Teaser -->
+          <span v-html="story.teaser" class="teaser"></span>
+
+          <!-- Content -->
+          <span v-html="story.content" class="content"></span>
+
+          <!-- Tags -->
+          <p>TAGS</p><span v-for="tag in story.tags" class="tags">{{ tag }}</span>
+        </div>
+      </section>
+
+      <!-- Related Stories-->
+      <section class="component">
+        <div class="safe-area">
+          <aside class="relatedStories">
+            <h4>READ MORE</h4>
+
+            <ul class="relatedStories">
+              <li v-for="relatedStory in relatedStories" class="relatedStory">
+                <div v-on:click="load(relatedStory)">
+                  <img v-bind:src="relatedStory.image.url" class="related-story-image">
+                  <p class="relatedStoryTitle">{{ relatedStory.title }}</p>
+                </div>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Scripts here are what load the Vue library, and the actual story content. -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://abesiemsen.github.io/layout2020spring-resources/projects/news-story-template/data.js"></script>
+
+  </body>
+
+  <script>
+
+      function teaserChecker() {
+      var teaser = document.querySelector(".teaser").innerHTML;
+      var lineOne = document.querySelector("#lineAboveTeaser");
+      var lineTwo = document.querySelector("#lineBelowTeaser");
+
+      if (teaser == "") {
+        lineOne.classList.add("hidden");
+        lineTwo.classList.add("hidden");
+      }
+    }
+
+    document.addEventListener("DOMSubtreeModified", teaserChecker);
+
+  </script>
+
+</html>
