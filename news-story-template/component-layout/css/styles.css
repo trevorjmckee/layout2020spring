@@ -104,6 +104,10 @@ h2 {
 
 /* h3 (date) */
 
+div.info {
+  padding: 30px 0 20px 0;
+}
+
 h3 {
   display: inline;
 
@@ -170,6 +174,10 @@ div.line {
   border-top: solid 1px rgb(0, 60, 100);
 }
 
+div.line.hidden {
+  display: none;
+}
+
 .teaser {
   font-family: fira-sans, sans-serif;
   font-size: 1.2rem;
@@ -193,11 +201,11 @@ span.content p {
 /* .content a (link inside content) */
 
 .content a {
-  color: rgb(255, 190, 0);
+  color: rgb(0, 60, 100);
 }
 
 .content a:visited {
-  color: rgb(255, 190, 0);
+  color: rgb(0, 60, 100);
 }
 
 
@@ -217,25 +225,27 @@ h4 {
 
 ul.relatedStories {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 
-  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 li.relatedStory {
+  position: relative;
   list-style-type: none;
-
-  margin: 15px auto;
-  width: 200px;
+  width: 45%;
+  padding: 2.5%;
 }
 
 li.relatedStory img {
-  height: 150px;
-  width: 200px;
+  width: 100%;
   object-fit: cover;
 }
 
 p.relatedStoryTitle {
+  margin: 0;
   padding: 15px;
   box-sizing: border-box;
 

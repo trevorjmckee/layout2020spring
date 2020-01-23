@@ -35,6 +35,9 @@
           <!-- Teaser -->
           <span v-html="story.teaser" class="teaser"></span>
 
+          <!-- Line -->
+          <div class="line"></div>
+
           <!-- Content -->
           <span v-html="story.content" class="content"></span>
 
@@ -48,6 +51,8 @@
         <div class="safe-area">
           <aside class="relatedStories">
             <h4>READ MORE</h4>
+            <!-- Line -->
+            <div class="line"></div>
 
             <ul class="relatedStories">
               <li v-for="relatedStory in relatedStories" class="relatedStory">
@@ -73,12 +78,12 @@
 
       function teaserChecker() {
       var teaser = document.querySelector(".teaser").innerHTML;
-      var lineOne = document.querySelector("#lineAboveTeaser");
-      var lineTwo = document.querySelector("#lineBelowTeaser");
+      var line = document.querySelector(".line");
 
       if (teaser == "") {
-        lineOne.classList.add("hidden");
-        lineTwo.classList.add("hidden");
+        line.classList.add("hidden");
+      } else {
+        line.classList.remove("hidden");
       }
     }
 
