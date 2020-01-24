@@ -12,11 +12,12 @@
 
       <!-- Header -->
       <header class="component">
-        <img v-bind:src="story.image.url">
+        <img :style="{backgroundImage:`url(${story.image.url})`}">
+        <!-- v-bind:src="story.image.url" -->
         <div class="safe-area">
           <div class="title">
             <h1>{{ story.title }}</h1>
-            <h2 class="subtitle">{{ story.subtitle }}</h2>
+            <h2 class="subtitle" v-if="story.subtitle">{{ story.subtitle }}</h2>
         </div>
 
         <div class="info">
@@ -54,12 +55,10 @@
             <div class="line"></div>
 
           <div class="related-story-block">
-            <div v-for="relatedStory in relatedStories" class="related-story">
-              <div v-on:click="load(relatedStory)">
-                        <p class="relatedStoryTitle">{{ relatedStory.title }}</p>
-                        <div class="related-story-image-container">
-                          <img v-bind:src="relatedStory.image.url" class="related-story-image">
-                        </div>
+            <div v-for="relatedStory in relatedStories" class="related-story-one">
+              <div v-on:click="load(relatedStory)" class="related-story">
+                <p class="relatedStoryTitle">{{ relatedStory.title }}</p>
+                <img v-bind:src="relatedStory.image.url" class="related-story-image">
               </div>
             </div>
           </div>
@@ -86,14 +85,14 @@
         line.classList.remove("hidden");
       }
 
-      var subtitle = document.querySelector(".subtitle").innerHTML;
-      var attributeAdder = document.querySelector(".subtitle");
+      // var subtitle = document.querySelector(".subtitle").innerHTML;
+      // var attributeAdder = document.querySelector(".subtitle");
 
-      if (subtitle == "") {
-        attributeAdder.classList.add("hidden");
-      } else {
-        attributeAdder.classList.remove("hidden");
-      }
+      // if (subtitle == "") {
+      //   attributeAdder.classList.add("hidden");
+      // } else {
+      //   attributeAdder.classList.remove("hidden");
+      // }
       }
 
     document.addEventListener("DOMSubtreeModified", checker);

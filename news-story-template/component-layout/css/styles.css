@@ -16,7 +16,7 @@ body {
 /* .component */
 
 .component {
-  padding: 30px 0;
+  padding: 40px 0;
 }
 
 section.component.content {
@@ -57,18 +57,24 @@ header.component img {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
 
-  max-height: 400px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+
+  max-height: 700px;
 }
 
 header.component div.safe-area {
-  margin-top: 200px;
+  margin-top: 500px;
 }
 
 div.title {
   background-color: rgb(255, 190, 0);
   box-shadow: 0px 10px 10px 3px rgba(0,0,0,0.07);
+  padding: 1px;
 }
 
 
@@ -76,12 +82,11 @@ div.title {
 /* h1 (title) */
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 700;
   text-align: center;
 
-  margin: auto;
-  padding: 30px 30px 0 30px;
+  margin: 30px auto;
   max-width: 90%;
 }
 
@@ -90,13 +95,13 @@ h1 {
 /* h2 (subtitle) */
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 300;
-  line-height: 1.8rem;
+  line-height: 2.1rem;
   text-align: center;
 
-  margin: auto;
-  padding: 30px;
+  margin: 30px auto;
+  margin-top: 0;
   max-width: 70%;
 }
 
@@ -117,7 +122,7 @@ h3 {
   display: block;
 
   font-family: fira-sans, sans-serif;
-  font-size: .8rem;
+  font-size: 1rem;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.65);
 
@@ -135,7 +140,7 @@ h3 {
   padding: 10px;
   margin-right: 10px;
 
-  font-size: .8rem;
+  font-size: 1rem;
   background-color: rgb(255, 190, 0);
 }
 
@@ -147,7 +152,7 @@ h3 {
   display: inline;
 
   font-family: fira-sans, sans-serif;
-  font-size: .8rem;
+  font-size: 1rem;
   font-weight: 400;
 
   color: rgba(0, 0, 0, 0.65);
@@ -159,7 +164,7 @@ h3 {
 
 .articleSource {
   font-family: fira-sans, sans-serif;
-  font-size: .8rem;
+  font-size: 1rem;
   font-weight: 400;
 
   color: rgb(0, 60, 100);
@@ -184,8 +189,8 @@ div.line.hidden {
 
 .teaser {
   font-family: fira-sans, sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
   padding: 30px 0;
 }
 
@@ -194,8 +199,8 @@ div.line.hidden {
 /* .content (paragraphs) */
 
 span.content p {
-  font-size: 1rem;
-  line-height: 1.6rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
 
   padding-bottom: .5rem;
 }
@@ -218,7 +223,7 @@ span.content p {
 
 h4 {
   font-family: fira-sans, sans-serif;
-  font-size: 10pt;
+  font-size: 12pt;
   font-weight: 500;
   color: rgba(0, 0, 0, .65);
 
@@ -232,26 +237,36 @@ h4 {
   flex-flow: row wrap;
   justify-content: flex-start;
 
-  margin: 0;
+  margin: 0 -2.5%;
   padding: 0;
 }
 
-.related-story {
+.related-story-one {
   width: 45%;
+  height: 350px;
   margin: 2.5%;
-  height: 250px;
-  overflow: hidden;
+}
+
+.related-story {
+  position: relative;
+  width: 100%;
 }
 
 p.relatedStoryTitle {
+  position: absolute;
+
+  font-size: 1.3rem;
   font-weight: 700;
+  color: white;
+  background-color: rgba(0, 60, 100, 0.7);
 
   margin: 0;
-  padding: 0 0 5px 0;
+  padding: 15px;
   box-sizing: border-box;
 }
 
-.related-story-image-container img {
+ img.related-story-image {
   width: 100%;
+  height: 300px;
   object-fit: cover;
 }
