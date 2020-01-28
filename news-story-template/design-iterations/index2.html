@@ -4,58 +4,50 @@
     <title>News Story Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>[v-cloak] { display: none; }</style>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles2.css">
     <link rel="stylesheet" href="https://use.typekit.net/tha4zph.css">
   </head>
   <body>
     <div id="news-template" v-cloak>
 
-      <!-- Header -->
-      <header class="component">
-        <div class="image-container">
-          <img :style="{backgroundImage:`url(${story.image.url})`}">
-        </div>
-        <!-- v-bind:src="story.image.url" -->
-
-        <div class="title">
-          <h1>{{ story.title }}</h1>
-        </div>
-
+      <section class="component content header">
         <div class="safe-area">
+        
+        <!-- Header -->
+            <div class="title">
+                <h1>{{ story.title }}</h1>
+            </div>
+            <h2 class="subtitle" v-if="story.subtitle">{{ story.subtitle }}</h2>
 
-        <div class="info">
-          <span class="caption">{{ story.image.caption }}</span>
-          <a v-bind:href="story.source.url" class="articleSource">{{ story.source.name }}</a>
-          <h3>{{ story.date }}</h3>
-        </div>
+            <div class="line"></div>
 
-        <h2 class="subtitle" v-if="story.subtitle">{{ story.subtitle }}</h2>
-        </div>
-      </header>
+            <img v-bind:src="story.image.url">
+
+            <div class="info">
+                <span class="caption">{{ story.image.caption }}</span>
+                <a v-bind:href="story.source.url" class="articleSource">{{ story.source.name }}</a>
+                <h3>{{ story.date }}</h3>
+            </div>
 
       <!-- Content -->
-      <section class="component content">
-        <div class="safe-area">
-
-          <!-- Teaser -->
-          <div class="teaser-box">
+            <div class="line"></div>
+            <!-- Teaser -->
             <span v-html="story.teaser" class="teaser"></span>
-          </div>
+            <div class="line"></div>
+            <!-- Content -->
+            <span v-html="story.content" class="content"></span>
+            <!-- Tags -->
+            <span v-for="tag in story.tags" class="tags">{{ tag }}</span>
 
-          <!-- Content -->
-          <span v-html="story.content" class="content"></span>
-
-          <!-- Tags -->
-          <span v-for="tag in story.tags" class="tags">{{ tag }}</span>
         </div>
       </section>
 
       <!-- Related Stories-->
       <section class="component">
         <div class="safe-area">
-            <h4>READ MORE</h4>
-            <!-- Line -->
-            <div class="line" id="line-above-related-stories"></div>
+
+        <h4>READ MORE</h4>
+        <div class="line" id="line-above-related-stories"></div>
 
           <div class="related-story-block">
             <div v-for="relatedStory in relatedStories" class="related-story-one">
@@ -65,6 +57,7 @@
               </div>
             </div>
           </div>
+
         </div>
       </section>
 
@@ -87,15 +80,6 @@
       } else {
         line.classList.remove("hidden");
       }
-
-      // var subtitle = document.querySelector(".subtitle").innerHTML;
-      // var attributeAdder = document.querySelector(".subtitle");
-
-      // if (subtitle == "") {
-      //   attributeAdder.classList.add("hidden");
-      // } else {
-      //   attributeAdder.classList.remove("hidden");
-      // }
       }
 
     document.addEventListener("DOMSubtreeModified", checker);

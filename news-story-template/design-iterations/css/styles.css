@@ -55,6 +55,12 @@ header.component div.image-container {
   height: 550px;
 }
 
+@media (max-width: 620px) {
+  header.component div.image-container {
+    height: 700px;
+  }
+}
+
 header.component img {
   position: absolute;
   top: 0;
@@ -68,7 +74,7 @@ header.component img {
   background-position: center bottom;
   background-repeat: no-repeat;
 
-  max-height: 700px;
+  max-height: 850px;
 }
 
 div.title {
@@ -83,6 +89,12 @@ div.title {
   padding: 1px;
 }
 
+@media (max-width: 620px) {
+  div.title {
+    height: 700px;
+  }
+}
+
 
 
 /* h1 (title) */
@@ -92,9 +104,15 @@ h1 {
   font-weight: 700;
   color: white;
 
-  margin: 330px auto 30px auto;
+  margin: 200px auto 30px auto;
   width: 80%;
   max-width: 800px;
+}
+
+@media (max-width: 620px) {
+  h1 {
+    margin-top: 160px;
+  }
 }
 
 
@@ -124,6 +142,12 @@ div.info {
   margin-top: 530px;
 }
 
+@media (max-width: 620px) {
+  div.info {
+    margin-top: 680px;
+  }
+}
+
 div.info .articleSource {
   float: left;
 }
@@ -138,7 +162,6 @@ h3 {
   color: rgba(0, 0, 0, 0.65);
 
   margin: 0;
-  margin-top: .6rem;
 }
 
 
@@ -201,6 +224,7 @@ div.line.hidden {
 .teaser-box {
   background-color: rgb(0, 60, 100);
   padding: 30px;
+  margin-bottom: 50px;
 }
 
 .teaser {
@@ -285,4 +309,15 @@ p.relatedStoryTitle {
   width: 100%;
   height: 300px;
   object-fit: cover;
+}
+
+@media (max-width: 620px) {
+  .related-story-one {
+    width: 97.5%;
+    margin: 0% 2.5%;
+  }
+
+  #line-above-related-stories {
+    margin-bottom: 10px;
+  }
 }

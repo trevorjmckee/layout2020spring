@@ -1,0 +1,283 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+/* body */
+
+body {
+    font-family: mono45-headline, monospace;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+
+    background-color: #F0EFEC;
+    color: white;
+  }
+  
+  
+  
+  /* .component */
+  
+  .component {
+    padding: 40px 0;
+  }
+  
+  
+  
+  /* .safe-area */
+  
+  .safe-area {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+
+    background-color: #97B1A6;
+    box-shadow: 0px 10px 10px 3px #E1DFD9;
+  }
+  
+  .safe-area > :last-child {
+    margin-bottom: 0;
+  }
+  
+  
+  
+  /* header (title, subtitle, and date) */
+  
+  .header.component {
+    position: relative;
+    padding-bottom: 0;
+  }
+  
+  
+  .header.component img {
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  div.title {
+    width: 100%;
+  }
+  
+  @media (max-width: 620px) {
+    div.title {
+      height: 700px;
+    }
+  }
+  
+  
+  
+  /* h1 (title) */
+  
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #121F21;
+  
+    margin: 0;
+    padding: 20px auto;
+  }
+
+  
+  
+  
+  /* h2 (subtitle) */
+  
+  h2 {
+    font-family: zeitung, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2.1rem;
+  
+    margin: 30px 0;
+  }
+  
+  h2.hidden {
+    padding: 0;
+    padding-bottom: 30px;
+  }
+  
+  
+  
+  /* h3 (date) */
+  
+  div.info {
+    padding: 20px 0 20px 0;
+    margin-bottom: 30px;
+  }
+  
+  div.info .articleSource {
+    float: left;
+    color: #1D2629;
+  }
+
+  div.info .articleSource:visited {
+    color: #1D2629;
+  }
+  
+  h3 {
+    display: block;
+    float: right;
+  
+    font-family: zeitung, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1D2629;
+  
+    margin: 0;
+  }
+  
+  
+  
+  /* .tags (tags) */
+  
+  .tags {
+    display: inline-block;
+  
+    padding: 10px;
+    margin-right: 10px;
+  
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #1D2629;
+  }
+  
+  
+  
+  /* .caption (image caption) */
+  
+  .caption {
+    display: inline;
+  
+    font-family: zeitung, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+  
+    color: ##1D2629;
+  }
+  
+  
+  
+  /* .articleSource (the source of the original article) */
+  
+  .articleSource {
+    font-family: zeitung, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+  
+    color: ##1D2629;
+  }
+  
+  .articleSource a:visited {
+    color: #1D2629;
+  }
+  
+  
+  
+  /* .teaser (teaser) */
+  
+  div.line {
+    width: 100%;
+    border-top: solid 1px #1D2629;
+  }
+  
+  div.line.hidden {
+    display: none;
+  }
+  
+  .teaser {
+    font-family: zeitung, sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    color: white;
+  }
+  
+  
+  
+  /* .content (paragraphs) */
+  
+  span.content p {
+    font-family: zeitung, sans-serif;
+    font-size: 1.3rem;
+    line-height: 2rem;
+
+    color: #1D2629;
+  
+    padding-bottom: .5rem;
+  }
+  
+  
+  
+  /* .content a (link inside content) */
+  
+  .content a {
+    color: white;
+  }
+  
+  .content a:visited {
+    color: white;
+  }
+  
+  
+  
+  /* .relatedStory (list of related stories) */
+  
+  h4 {
+    font-family: zeitung, sans-serif;
+    font-size: 12pt;
+    font-weight: 700;
+    color: #1D2629;
+  
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  
+  .related-story-block {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  
+    margin: 0 -1.66%;
+    padding: 0;
+  }
+  
+  div.related-story-one {
+    width: 30%;
+    height: 220px;
+    margin: 1.66%;
+    overflow: hidden;
+  }
+  
+  
+  p.relatedStoryTitle {
+    font-family: zeitung, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    background-color: #1D2629;
+  
+    margin: 0;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  
+   img.related-story-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 620px) {
+    .related-story-one {
+      width: 97.5%;
+      margin: 0% 2.5%;
+    }
+  
+    #line-above-related-stories {
+      margin-bottom: 10px;
+    }
+  }
