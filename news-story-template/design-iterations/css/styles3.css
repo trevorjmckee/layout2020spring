@@ -278,7 +278,7 @@ p.relatedStoryTitle {
 }
 
 @media (max-width: 620px) {
-  .related-story-one {
+  div.related-story-one {
     width: 97.5%;
     margin: 0% 2.5%;
   }
