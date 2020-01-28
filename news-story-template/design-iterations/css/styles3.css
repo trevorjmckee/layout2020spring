@@ -94,6 +94,14 @@ div.title h1 {
   margin: 0;
 }
 
+@media (max-width: 1300px) {
+  div.title h1 {
+    max-width: 90%;
+    font-size: 4rem;
+    line-height: 4.7rem;
+  }
+}
+
 @media (max-width: 620px) {
   div.title h1 {
     max-width: 95%;
@@ -114,6 +122,13 @@ h2 {
 
   max-width: 70%;
   margin: 30px 0;
+}
+
+@media (max-width: 1300px) {
+  h2 {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
 }
 
 @media (max-width: 620px) {
@@ -294,6 +309,23 @@ div.related-story-one {
   div.related-story-one {
     height: 250px;
   }
+  div.related-story-one {
+    width: 97.5%;
+    margin: 20px 2.5%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .aside {
+    position: absolute;
+    top: 102vh;
+    left: 1000px;
+  }
+  div.related-story-one {
+    height: 250px;
+    width: 97.5%;
+    margin: 20px 2.5%;
+  }
 }
 
 p.relatedStoryTitle {
@@ -312,12 +344,6 @@ img.related-story-image {
   height: 100%;
   object-fit: cover;
 }
-
-@media (max-width: 620px) {
-  div.related-story-one {
-    width: 97.5%;
-    margin: 20px 2.5%;
-  }
 
   #line-above-related-stories {
     margin-bottom: 10px;
