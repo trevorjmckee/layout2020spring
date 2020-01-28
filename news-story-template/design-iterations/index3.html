@@ -10,19 +10,17 @@
   <body>
     <div id="news-template" v-cloak>
 
+          <img v-bind:src="story.image.url">
+
+          <div class="title">
+            <h1>{{ story.title }}</h1>
+            <h2 class="subtitle" v-if="story.subtitle">{{ story.subtitle }}</h2>
+          </div>
+
       <section class="component content header">
         <div class="safe-area">
         
         <!-- Header -->
-            <div class="title">
-                <h1>{{ story.title }}</h1>
-            </div>
-            <h2 class="subtitle" v-if="story.subtitle">{{ story.subtitle }}</h2>
-
-            <div class="line"></div>
-
-            <img v-bind:src="story.image.url">
-
             <div class="info">
                 <span class="caption">{{ story.image.caption }}</span>
                 <a v-bind:href="story.source.url" class="articleSource">{{ story.source.name }}</a>
