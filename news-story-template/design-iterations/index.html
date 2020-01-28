@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>News Story Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>[v-cloak] { display: none; }</style>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tha4zph.css">
+  </head>
+  <body>
+    <div id="news-template" v-cloak>
+
+      <!-- Header -->
+      <header class="component">
+        <div class="image-container">
+          <img :style="{backgroundImage:`url(${story.image.url})`}">
+        </div>
+        <!-- v-bind:src="story.image.url" -->
+
+        <div class="title">
+          <h1>{{ story.title }}</h1>
+        </div>
+
+        <div class="safe-area">
+
+        <div class="info">
+          <span class="caption">{{ story.image.caption }}</span>
+          <a v-bind:href="story.source.url" class="articleSource">{{ story.source.name }}</a>
+          <h3>{{ story.date }}</h3>
+        </div>
+
+        <h2 class="subtitle" v-if="story.subtitle">{{ story.subtitle }}</h2>
+        </div>
+      </header>
+
+      <!-- Content -->
+      <section class="component content">
+        <div class="safe-area">
+
+          <!-- Teaser -->
+          <div class="teaser-box">
+            <span v-html="story.teaser" class="teaser"></span>
+          </div>
+
+          <!-- Content -->
+          <span v-html="story.content" class="content"></span>
+
+          <!-- Tags -->
+          <span v-for="tag in story.tags" class="tags">{{ tag }}</span>
+        </div>
+      </section>
+
+      <!-- Related Stories-->
+      <section class="component">
+        <div class="safe-area">
+            <h4>READ MORE</h4>
+            <!-- Line -->
+            <div class="line"></div>
+
+          <div class="related-story-block">
+            <div v-for="relatedStory in relatedStories" class="related-story-one">
+              <div v-on:click="load(relatedStory)" class="related-story">
+                <p class="relatedStoryTitle">{{ relatedStory.title }}</p>
+                <img v-bind:src="relatedStory.image.url" class="related-story-image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Scripts here are what load the Vue library, and the actual story content. -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://abesiemsen.github.io/layout2020spring-resources/projects/news-story-template/data.js"></script>
+
+  </body>
+
+  <script>
+
+      function checker() {
+      var teaser = document.querySelector(".teaser").innerHTML;
+      var line = document.querySelector(".line");
+
+      if (teaser == "") {
+        line.classList.add("hidden");
+      } else {
+        line.classList.remove("hidden");
+      }
+
+      // var subtitle = document.querySelector(".subtitle").innerHTML;
+      // var attributeAdder = document.querySelector(".subtitle");
+
+      // if (subtitle == "") {
+      //   attributeAdder.classList.add("hidden");
+      // } else {
+      //   attributeAdder.classList.remove("hidden");
+      // }
+      }
+
+    document.addEventListener("DOMSubtreeModified", checker);
+
+  </script>
+
+</html>
