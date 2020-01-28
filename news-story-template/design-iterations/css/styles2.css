@@ -30,7 +30,7 @@ body {
   .safe-area {
     position: relative;
     width: 80%;
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
     padding: 30px;
 
@@ -59,12 +59,6 @@ body {
   
   div.title {
     width: 100%;
-  }
-  
-  @media (max-width: 620px) {
-    div.title {
-      height: 700px;
-    }
   }
   
   
@@ -272,9 +266,9 @@ body {
   }
   
   @media (max-width: 620px) {
-    .related-story-one {
+    div.related-story-one {
       width: 97.5%;
-      margin: 0% 2.5%;
+      margin: 2% 2.5%;
     }
   
     #line-above-related-stories {

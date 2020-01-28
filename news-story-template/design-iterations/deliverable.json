@@ -1,15 +1,15 @@
 {
     "entrypoints": [
       {
-        "name": "Image heavy",
+        "name": "Image",
         "file": "index.html"
       },
       {
-        "name": "Sectioned",
+        "name": "Section",
         "file": "index2.html"
       },
       {
-        "name": "Example 3",
+        "name": "Big",
         "file": "index3.html"
       }
     ]
