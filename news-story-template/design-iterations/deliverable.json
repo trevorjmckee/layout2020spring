@@ -1,0 +1,16 @@
+{
+    "entrypoints": [
+      {
+        "name": "Image heavy",
+        "file": "index.html"
+      },
+      {
+        "name": "Sectioned",
+        "file": "index2.html"
+      },
+      {
+        "name": "Example 3",
+        "file": "index3.html"
+      }
+    ]
+  }
