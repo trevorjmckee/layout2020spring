@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>News Story Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>[v-cloak] { display: none; }</style>
+    <link rel="stylesheet" href="css/styles3.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tha4zph.css">
+  </head>
+  <body>
+    <div id="news-template" v-cloak>
+
+          <img v-bind:src="story.image.url">
+
+          <div class="title">
+            <h1>{{ story.title }}</h1>
+            <h2 class="subtitle" v-if="story.subtitle">{{ story.subtitle }}</h2>
+          </div>
+
+      <section class="component content header">
+        <div class="safe-area">
+        
+        <!-- Header -->
+            <div class="info">
+                <span class="caption">{{ story.image.caption }}</span>
+                <a v-bind:href="story.source.url" class="articleSource">{{ story.source.name }}</a>
+                <h3>{{ story.date }}</h3>
+            </div>
+
+      <!-- Content -->
+            <div class="line"></div>
+            <!-- Teaser -->
+            <span v-html="story.teaser" class="teaser"></span>
+            <div class="line"></div>
+            <!-- Content -->
+            <span v-html="story.content" class="content"></span>
+            <!-- Tags -->
+            <span v-for="tag in story.tags" class="tags">{{ tag }}</span>
+
+        </div>
+      </section>
+
+      <!-- Related Stories-->
+      <section class="component">
+        <div class="safe-area">
+
+          <div class="related-stories">
+            <div class="related-story" v-for="relatedStory in relatedStories" v-on:click="load(relatedStory)">
+              <p class="related-story-title">{{ relatedStory.title }}</p>
+              <div class="related-story-thumbnail"><img v-bind:src="relatedStory.image.url"></div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Scripts here are what load the Vue library, and the actual story content. -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://abesiemsen.github.io/layout2020spring-resources/projects/news-story-template/data.js"></script>
+
+  </body>
+
+</html>

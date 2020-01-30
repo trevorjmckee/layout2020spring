@@ -6,13 +6,9 @@
 /* body */
 
 body {
-  font-family: questa-slab, serif;
-  font-weight: 400;
+  font-family: ff-meta-serif-web-pro, serif;
   margin: 0;
   padding: 0;
-
-  background-color: black;
-  color: white;
 }
 
 
@@ -20,7 +16,11 @@ body {
 /* .component */
 
 .component {
-  padding: 30px 0;
+  padding: 40px 0;
+}
+
+section.component.content {
+  padding-top: 0;
 }
 
 
@@ -30,14 +30,8 @@ body {
 .safe-area {
   position: relative;
   width: 80%;
-  max-width: 900px;
-  margin: auto auto auto 5%;
-}
-
-@media (max-width: 620px) {
-  .safe-area {
-    width: 90%;
-  }
+  max-width: 800px;
+  margin: auto;
 }
 
 .safe-area > :last-child {
@@ -48,21 +42,39 @@ body {
 
 /* header (title, subtitle, and date) */
 
-.header.component {
+header.component {
   position: relative;
-  margin-top: 100vh;
   padding-bottom: 0;
 }
 
-
-#news-template > img {
+header.component div.image-container {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  object-fit: cover;
-  object-position: center;
-  min-height: 100%;
+  height: 550px;
+}
+
+@media (max-width: 620px) {
+  header.component div.image-container {
+    height: 700px;
+  }
+}
+
+header.component img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+
+  max-height: 850px;
 }
 
 div.title {
@@ -70,46 +82,38 @@ div.title {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
-  box-sizing: border-box;
+  height: 550px;
 
-  padding: 100px 0 20px 5%;
+  background-color: rgba(0, 60, 100, .8);
+  box-shadow: 0px 10px 10px 3px rgba(0,0,0,0.08);
+  padding: 1px;
+}
 
-  background-color: rgba(20, 15, 30, 0.8);
+@media (max-width: 620px) {
+  div.title {
+    height: 700px;
+  }
 }
 
 
 
 /* h1 (title) */
 
-div.title h1 {
-  font-family: blenny, sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 6rem;
-  line-height: 7rem;
+h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
   color: white;
 
-  max-width: 80%;
-  margin: 0;
-}
-
-@media (max-width: 1300px) {
-  div.title h1 {
-    max-width: 90%;
-    font-size: 4rem;
-    line-height: 4.7rem;
-  }
+  margin: 200px auto 30px auto;
+  width: 80%;
+  max-width: 800px;
 }
 
 @media (max-width: 620px) {
-  div.title h1 {
-    max-width: 95%;
-    font-size: 2.5rem;
-    line-height: 3rem;
+  h1 {
+    margin-top: 160px;
   }
 }
-
 
 
 
@@ -120,23 +124,8 @@ h2 {
   font-weight: 300;
   line-height: 2.1rem;
 
-  max-width: 70%;
   margin: 30px 0;
-}
-
-@media (max-width: 1300px) {
-  h2 {
-    font-size: 1.2rem;
-    line-height: 1.7rem;
-  }
-}
-
-@media (max-width: 620px) {
-  div.title h2 {
-    max-width: 95%;
-    font-size: 1.2rem;
-    line-height: 1.7rem;
-  }
+  padding-bottom: 50px;
 }
 
 h2.hidden {
@@ -149,26 +138,28 @@ h2.hidden {
 /* h3 (date) */
 
 div.info {
-  padding: 15px 0 20px 0;
-  margin-bottom: 30px;
+  padding: 30px 0 20px 0;
+  margin-top: 530px;
+}
+
+@media (max-width: 620px) {
+  div.info {
+    margin-top: 680px;
+  }
 }
 
 div.info .articleSource {
   float: left;
-  color: white;
-}
-
-div.info .articleSource:visited {
-  color: white;
 }
 
 h3 {
   display: block;
   float: right;
 
+  font-family: fira-sans, sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  color: white;
+  color: rgba(0, 0, 0, 0.65);
 
   margin: 0;
 }
@@ -184,8 +175,7 @@ h3 {
   margin-right: 10px;
 
   font-size: 1rem;
-  font-weight: 400;
-  background-color: rgb(20, 15, 30);
+  background-color: rgb(255, 190, 0);
 }
 
 
@@ -195,10 +185,11 @@ h3 {
 .caption {
   display: inline;
 
+  font-family: fira-sans, sans-serif;
   font-size: 1rem;
   font-weight: 400;
 
-  color: white;
+  color: rgba(0, 0, 0, 0.65);
 }
 
 
@@ -206,14 +197,15 @@ h3 {
 /* .articleSource (the source of the original article) */
 
 .articleSource {
+  font-family: fira-sans, sans-serif;
   font-size: 1rem;
   font-weight: 400;
 
-  color: white;
+  color: rgb(0, 60, 100);
 }
 
 .articleSource a:visited {
-  color: white;
+  color: rgb(0, 60, 100);
 }
 
 
@@ -222,24 +214,24 @@ h3 {
 
 div.line {
   width: 100%;
-  border-top: solid 1px white;
+  border-top: solid 1px rgb(0, 60, 100);
 }
 
 div.line.hidden {
   display: none;
 }
 
-.teaser {
-  font-size: 2rem;
-  line-height: 3rem;
-  color: white;
+.teaser-box {
+  background-color: rgb(0, 60, 100);
+  padding: 30px;
+  margin-bottom: 50px;
 }
 
-@media (max-width: 620px) {
-  .teaser {
-    font-size: 1.3rem;
-    line-height: 1.9rem;
-  }
+.teaser {
+  font-family: fira-sans, sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  color: white;
 }
 
 
@@ -247,20 +239,10 @@ div.line.hidden {
 /* .content (paragraphs) */
 
 span.content p {
-  font-size: 1.5rem;
-  line-height: 2.3rem;
-
-  color: white;
+  font-size: 1.3rem;
+  line-height: 2rem;
 
   padding-bottom: .5rem;
-}
-
-@media (max-width: 620px) {
-  span.content p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    padding-bottom: .3rem;
-  }
 }
 
 
@@ -282,7 +264,7 @@ span.content p {
 h4 {
   font-size: 12pt;
   font-weight: 700;
-  color: white;
+  color: rgba(0, 0, 0, 0.65);
 
   margin: 0;
   margin-bottom: 10px;
@@ -318,13 +300,16 @@ div.related-story-one {
 @media (min-width: 1300px) {
   .aside {
     position: absolute;
-    top: 102vh;
-    left: 1000px;
+    top: 70vh;
+    left: 900px;
+    width: 350px;
   }
   div.related-story-one {
     height: 250px;
     width: 97.5%;
-    margin: 20px 2.5%;
+  }
+  .safe-area {
+    margin: auto auto auto 5%;
   }
 }
 
@@ -345,7 +330,6 @@ img.related-story-image {
   object-fit: cover;
 }
 
-  #line-above-related-stories {
-    margin-bottom: 10px;
-  }
+#line-above-related-stories {
+  margin-bottom: 10px;
 }

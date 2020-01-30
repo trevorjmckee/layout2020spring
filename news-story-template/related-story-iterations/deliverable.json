@@ -1,0 +1,16 @@
+{
+    "entrypoints": [
+      {
+        "name": "Sidebar",
+        "file": "index.html"
+      },
+      {
+        "name": "Text overlay",
+        "file": "index2.html"
+      },
+      {
+        "name": "Standard",
+        "file": "index3.html"
+      }
+    ]
+  }
