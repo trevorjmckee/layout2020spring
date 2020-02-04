@@ -1,0 +1,377 @@
+body {
+  font-family: abril-text, serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* .component */
+
+.component {
+  padding: 30px 0;
+}
+
+
+
+/* .safe-area */
+
+.safe-area {
+  position: relative;
+  max-width: 1120px;
+  margin: auto;
+}
+
+@media (max-width: 1120px) {
+  .safe-area {
+    width: 95%;
+  }
+}
+
+.content, .author {
+  margin: 0 20px;
+}
+
+hr {
+  background-color: black;
+  border: none;
+  margin: 0;
+  height: 2px;
+}
+
+hr.two {
+  margin: 50px 0 0 0;
+}
+
+@media (max-width: 1160px) {
+  hr.two {
+    margin: 50px auto 0 auto;
+    width: 95%;
+    max-width: 784px;
+  }
+}
+
+hr.one {
+  height: 4px;
+  margin-top: 10px;
+}
+
+
+/* flex container */
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+
+
+/* content */
+.content {
+  max-width: 800px;
+}
+
+.author {
+  padding: 32px 0 30px 0;
+}
+
+.bio {
+  max-width: 280px;
+}
+
+@media (max-width: 1160px) {
+  .bio {
+    width: 95%;
+    max-width: 800px;
+  }
+}
+
+.author-image {
+  float: left;
+  margin: 0;
+  padding: 0 20px 15px 0;
+  width: 75px;
+}
+
+.bio p {
+  display: inline;
+}
+
+.sticky {
+  position: sticky;
+  top: 2rem;
+}
+
+div.social-media {
+  display: flex;
+  align-items: flex-start;
+
+  margin: 0 -10px;
+}
+
+div.social-media a {
+  color: black;
+  text-decoration: none;
+}
+
+div.social-media i {
+  font-size: 2.5rem;
+  margin: 10px;
+  transition: all .2s ease-in-out;
+}
+
+div.social-media i:hover {
+  color: rgb(255,166,0);
+}
+
+
+
+/* header (title, subtitle, and date) */  
+
+img.story-image {
+  width: 100%;
+}
+
+div.title {
+  box-sizing: border-box;
+
+  padding: 70px 5% 40px 5%;
+
+  background-color: rgb(255,166,0);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+              0 2px 4px rgba(0,0,0,0.07), 
+              0 4px 8px rgba(0,0,0,0.07), 
+              0 8px 16px rgba(0,0,0,0.07),
+              0 16px 32px rgba(0,0,0,0.07), 
+              0 32px 64px rgba(0,0,0,0.07);
+}
+
+
+
+/* h1 (title) */
+
+h1 {
+  font-family: abril-fatface, serif;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 4.5rem;
+  color: white;
+
+  margin: 0;
+
+  text-shadow: 0 3px rgb(223, 148, 10);
+}
+
+
+
+/* h2 (subtitle) */
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 2.1rem;
+
+  margin: 30px 0;
+
+  color: white;
+}
+
+
+
+/* h3 (date) */
+
+div.info {
+  padding: 0 0 20px 0;
+  margin-bottom: 30px;
+}
+
+div.info .articleSource {
+  float: left;
+  color: black;
+}
+
+div.info .articleSource:visited {
+  color: black;
+}
+
+h3 {
+  display: block;
+  float: right;
+
+  font-size: 1rem;
+  font-weight: 400;
+  color: black;
+
+  margin: 0;
+}
+
+
+
+/* .tags (tags) */
+
+.tags {
+  display: inline-block;
+
+  padding: 10px;
+  margin-right: 10px;
+
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: rgb(20, 15, 30);
+  color: white;
+}
+
+
+
+/* .caption (image caption) */
+
+.caption {
+  display: inline;
+
+  font-size: 1rem;
+  font-weight: 400;
+
+  color: black;
+}
+
+
+
+/* .articleSource (the source of the original article) */
+
+.articleSource {
+  font-size: 1rem;
+  font-weight: 400;
+
+  color: black;
+}
+
+.articleSource a:visited {
+  color: black;
+}
+
+
+
+/* .teaser (teaser) */
+
+div.line {
+  width: 100%;
+  border-top: solid 1px black;
+}
+
+div.line.hidden {
+  display: none;
+}
+
+.teaser {
+  font-size: 2rem;
+  line-height: 3rem;
+  color: black;
+}
+
+
+
+/* .content (paragraphs) */
+
+span.content p {
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+
+  color: black;
+
+  padding-bottom: .5rem;
+}
+
+
+
+/* .content a (link inside content) */
+
+.content a {
+  color: black;
+}
+
+.content a:visited {
+  color: black;
+}
+
+
+
+/* .relatedStory (list of related stories) */
+
+h4 {
+  font-size: 12pt;
+  font-weight: 700;
+  color: black;
+
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+
+p.related-story-title {
+  font-size: 1rem;
+  font-weight: 400;
+  color: black;
+
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+}  
+
+.related-stories {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10px -10px;
+}
+
+.related-story {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 20%;
+  min-width: 240px;
+  flex: 1 1 auto;
+
+  padding: 10px;
+}
+
+.related-stories img {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.related-story-thumbnail {
+  position: relative;
+  height: 0;
+  padding-bottom: 60%;
+}
+
+
+
+#myBtn {
+  display: block; /* Hidden by default */
+  opacity: 0;
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(255,166,0); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 30px; /* Rounded corners */
+  font-size: 12px; /* Increase font size */
+  transition: all .3s ease-in-out;
+}
+
+#myBtn:hover {
+  background-color: black; /* Add a dark-grey background on hover */
+}
