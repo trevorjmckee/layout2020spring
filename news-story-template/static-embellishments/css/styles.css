@@ -70,6 +70,7 @@ hr.one {
 /* content */
 .content {
   max-width: 800px;
+  padding-bottom: 0;
 }
 
 .author {
@@ -81,6 +82,9 @@ hr.one {
 }
 
 @media (max-width: 1160px) {
+  .author {
+    padding-top: 16px;
+  }
   .bio {
     width: 95%;
     max-width: 800px;
@@ -327,7 +331,7 @@ p.related-story-title {
 }
 
 .related-story {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: flex-start;
 
@@ -336,6 +340,10 @@ p.related-story-title {
   flex: 1 1 auto;
 
   padding: 10px;
+}
+
+.related-story:nth-child(-n+12) {
+  display: flex;
 }
 
 .related-stories img {
