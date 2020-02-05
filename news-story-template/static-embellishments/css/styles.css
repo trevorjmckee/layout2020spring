@@ -3,6 +3,8 @@ body {
   font-weight: 400;
   margin: 0;
   padding: 0;
+
+  color: rgb(10,10,10);
 }
 
 
@@ -34,14 +36,14 @@ body {
 }
 
 hr {
-  background-color: black;
+  background-color: rgb(100,100,100);
   border: none;
   margin: 0;
   height: 2px;
 }
 
 hr.two {
-  margin: 50px 0 0 0;
+  margin: 35px 0 0 0;
 }
 
 @media (max-width: 1160px) {
@@ -53,8 +55,9 @@ hr.two {
 }
 
 hr.one {
-  height: 4px;
+  height: 5px;
   margin-top: 10px;
+  background-color: rgb(10,10,10);
 }
 
 
@@ -103,6 +106,7 @@ hr.one {
 }
 
 .sticky {
+  margin-top: 30px;
   position: sticky;
   top: 2rem;
 }
@@ -142,7 +146,7 @@ div.title {
 
   padding: 70px 5% 40px 5%;
 
-  background-color: black;
+  background-color: rgb(15,15,15);
   box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
               0 2px 4px rgba(0,0,0,0.07), 
               0 4px 8px rgba(0,0,0,0.07), 
@@ -190,11 +194,11 @@ div.info {
 
 div.info .articleSource {
   float: left;
-  color: black;
+  color: rgb(100,100,100);
 }
 
 div.info .articleSource:visited {
-  color: black;
+  color: rgb(100,100,100);
 }
 
 h3 {
@@ -203,7 +207,7 @@ h3 {
 
   font-size: 1rem;
   font-weight: 400;
-  color: black;
+  color: rgb(100,100,100);
 
   margin: 0;
 }
@@ -256,15 +260,6 @@ h3 {
 
 /* .teaser (teaser) */
 
-div.line {
-  width: 100%;
-  border-top: solid 1px black;
-}
-
-div.line.hidden {
-  display: none;
-}
-
 .teaser {
   font-size: 2rem;
   line-height: 3rem;
@@ -303,7 +298,7 @@ span.content p {
 h4 {
   font-size: 12pt;
   font-weight: 700;
-  color: black;
+  color: rgb(100,100,100);
 
   margin: 0;
   margin-bottom: 10px;
