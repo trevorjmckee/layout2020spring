@@ -76,9 +76,9 @@
               <hr>
 
               <div class="related-stories">
-                <div class="related-story" v-for="relatedStory in relatedStories" v-on:click="load(relatedStory)">
-                  <div class="related-story-thumbnail"><img v-bind:src="relatedStory.image.url"></div>
-                  <p class="related-story-title">{{ relatedStory.title }}</p>
+                  <div class="related-story" v-for="relatedStory in relatedStories" v-on:click="load(relatedStory)">
+                    <div class="related-story-thumbnail"><div class="image-overlay"></div><img v-bind:src="relatedStory.image.url"></div>
+                    <p class="related-story-title">{{ relatedStory.title }}</p>
                 </div>
               </div>
 
