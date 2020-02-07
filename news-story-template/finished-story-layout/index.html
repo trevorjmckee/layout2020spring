@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>News Story Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>[v-cloak] { display: none; }</style>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tha4zph.css">
+    <script src="https://kit.fontawesome.com/00ca8fa005.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="news-template" v-cloak>
+
+          <div class="title">
+            <div class="safe-area">
+              <h1>{{ story.title }}</h1>
+              <h2 class="subtitle" v-if="story.subtitle">{{ story.subtitle }}</h2>
+            </div>
+          </div>
+
+          <div class="safe-area">
+            <hr class="two">
+          </div>
+
+        <div class="flex">
+          <section class="component content">
+            <div class="safe-area">
+            
+            <!-- Header -->
+                <div class="info">
+                    <img v-bind:src="story.image.url" class="story-image">
+                    <span class="caption">{{ story.image.caption }}</span>
+                    <a v-bind:href="story.source.url" class="articleSource">{{ story.source.name }}</a>
+                    <h3>{{ story.date }}</h3>
+                </div>
+
+          <!-- Content -->
+                <hr>
+                <!-- Teaser -->
+                <span v-html="story.teaser" class="teaser"></span>
+                <hr>
+                <!-- Content -->
+                <span v-html="story.content" class="content"></span>
+                <!-- Tags -->
+                <span v-for="tag in story.tags" class="tags">{{ tag }}</span>
+
+            </div>
+          </section>
+
+          <section class="author">
+            <div class="safe-area">
+
+              <div class="bio">
+                <img src="assets/author.jpg" class="author-image">
+                <p><strong>John Doe</strong> is an Editor-in-Chief here at our company. Before his 10 years here, he worked closely with other news companies. Here is some more static content that I want to use to shape this section.</p>
+             </div>
+            </div>
+
+            <div class='sticky'>
+                <hr class="one">
+                <div class="social-media">
+                  <a href="#"><i class="fab fa-facebook-square"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-twitter-square"></i></a>
+                </div>
+            </div>
+
+          </section>
+        </div>
+
+          <!-- Related Stories-->
+          <section class="component">
+            <div class="safe-area">
+
+              <h4>READ MORE</h4>
+              <hr>
+
+              <div class="related-stories">
+                  <div class="related-story" v-for="relatedStory in relatedStories" v-on:click="load(relatedStory)">
+                    <div class="related-story-thumbnail"><div class="image-overlay"></div><img v-bind:src="relatedStory.image.url"></div>
+                    <p class="related-story-title">{{ relatedStory.title }}</p>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Scripts here are what load the Vue library, and the actual story content. -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://abesiemsen.github.io/layout2020spring-resources/projects/news-story-template/data.js"></script>
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.visibility = "visible";
+          mybutton.style.opacity = "1";
+        } else {
+          mybutton.style.visibility = "hidden";
+          mybutton.style.opacity = "0";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+      }
+      </script>
+
+  </body>
+
+</html>
