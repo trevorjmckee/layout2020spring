@@ -45,17 +45,35 @@ li {
     transform: translateY(0%);
 }
 
-.fa-times {
-    display: none;
+.fa.fa-times {
+    position: fixed;
+    right: 30px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s ease-in-out;
 }
 
-.fa-bars.shown {
-    display: none;
+.fa.fa-times.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.fa.fa-bars {
+    position: fixed;
+    right: 30px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.fa.fa-bars.hidden {
+    visibility: hidden;
+    opacity: 0;
 }
 
 .main-nav-controls {
     color: white;
     text-align: right;
+    padding: 30px;
 }
 
 .main-nav > ul > li:first-of-type {
