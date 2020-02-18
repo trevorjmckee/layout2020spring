@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Mobile Nav Layout
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!-- TypeKit -->
+        <link rel="stylesheet" href="https://use.typekit.net/dij2vzn.css">
+
+        <!-- icons -->
+        <script src="https://kit.fontawesome.com/00ca8fa005.js" crossorigin="anonymous"></script>
+
+        <!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- menu -->
+        <script>
+			$(document).ready(function() {
+				$(".main-nav-controls").click(function(){
+					$(".main-nav").toggleClass("open");
+                    $(".fa-bars").toggleClass("hide");
+                    $(".fa-times").toggleClass("show");
+				});
+			});
+		</script>
+    </head>
+    <body>
+        <div class="masthead">
+            <div class="title"><a href="#" class="title">Two Depth</a></div>
+        </div>
+        <nav class="account-nav">
+            <div class="login"><a href="#">Sign up</a></div>
+        </nav>
+        <nav class="hot-nav">
+            <ul>
+                <li>
+                    <a href="#" class="hot-item">US</a>
+                </li>
+                <li>
+                    <a href="#" class="hot-item">World</a>
+                </li>
+                <li>
+                    <a href="#" class="hot-item">Politics</a>
+                </li>
+                <li>
+                    <a href="#" class="hot-item">Business</a>
+                </li>
+                <li>
+                    <a href="#" class="hot-item">Opinion</a>
+                </li>
+                <li>
+                    <a href="#" class="hot-item">Health</a>
+                </li>
+                <li>
+                    <a href="#" class="hot-item">Entertainment</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="main-nav-controls header">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li>
+                    <a href="#" class="top-item">News</a>
+                    <ul>
+                        <li>
+                            <a href="#" class="sub-item">US</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">World</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Politics</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Business</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Health</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Entertainment</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="top-item">Opinion</a>
+                    <ul>
+                        <li>
+                            <a href="#" class="sub-item">Editorials</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Mailbag</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Columnists</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Submit a letter</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="top-item">Entertainment</a>
+                    <ul>
+                        <li>
+                            <a href="#" class="sub-item">Books</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Music</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Movies</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Comics & games</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Television</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Dining</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Theater</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="top-item">Lifestyle</a>
+                    <ul>
+                        <li>
+                            <a href="#" class="sub-item">Advice</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Autos</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Bridal</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Food & cooking</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Drink</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Health</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Home & garden</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </div>
+        </nav>
+    </body>
+</html>

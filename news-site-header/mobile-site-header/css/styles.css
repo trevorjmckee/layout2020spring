@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: bely, serif;
+}
+
+.header {
+    position: relative;
+    z-index: 99;
+
+    background-color: rgb(25,25,25);
+}
+
+.masthead {
+    background-color: rgb(25,25,25);
+}
+
+.title {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: boucherie-sans, sans-serif;
+    font-size: 36pt;
+    font-weight: 700;
+    color: rgb(255,166,0);
+}
+
+.account-nav {
+    position: absolute;
+    top: 25px;
+    left: 15px;
+}
+
+.login {
+    padding: 5px;
+    background-color: rgb(255,166,0);
+    color: white;
+}
+
+ul {
+
+}
+
+li {
+    list-style: none;
+}
+
+.hot-nav {
+    display: none;
+}
+
+.hot-item {
+
+}
+
+.main-nav {
+    background-color: rgb(25,25,25);
+
+    position: absolute;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10%);
+    transition: all .5s ease-in-out;
+}
+
+.main-nav.open {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.fa.fa-times {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+
+.fa.fa-times.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.fa.fa-bars {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    visibility: visible;
+    opacity: 1;
+    transition: all .2s ease-in-out;
+}
+
+.fa.fa-bars.hide {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.main-nav-controls {
+    color: white;
+    text-align: right;
+}
+
+.main-nav > ul > li:first-of-type {
+    padding-top: 0;
+}
+
+.main-nav > ul > li {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.main-nav > ul >li > ul {
+    padding: 10px 0;
+}
+
+.top-item {
+    text-transform: uppercase;
+    font-size: 12pt;
+    font-weight: 700;
+}
+
+.sub-item {
+    font-size: 14pt;
+    line-height: 22pt;
+}
+
+a {
+    color: rgb(220,220,220);
+    text-decoration: none;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 50px;
+    font-size: 32pt;
+}
+
+.social-media a {
+    color: rgb(255,166,0);
+}
