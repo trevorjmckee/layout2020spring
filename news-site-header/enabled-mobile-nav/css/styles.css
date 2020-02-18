@@ -31,10 +31,10 @@
     left: 15px;
 }
 
-.login {
-    padding: 5px;
+.login a {
+    padding: 10px;
     background-color: rgb(255,166,0);
-    color: color: rgb(25,25,25);;
+    color: rgb(25,25,25);
 }
 
 ul {
