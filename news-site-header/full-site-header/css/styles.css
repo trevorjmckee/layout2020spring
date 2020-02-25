@@ -358,7 +358,7 @@ body.open {
   /* h1 (title) */
   
   h1 {
-    font-family: abril-fatface, serif;
+    font-family: bely, serif;
     font-weight: bold;
     font-size: 4rem;
     line-height: 4.5rem;
@@ -462,6 +462,10 @@ body.open {
     font-size: 2rem;
     line-height: 3rem;
     color: black;
+  }
+
+  .teaser p {
+    padding: 15px 0;
   }
   
   
