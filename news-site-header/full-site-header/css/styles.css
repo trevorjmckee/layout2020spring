@@ -61,6 +61,15 @@ li {
     color: white;
 }
 
+.box {
+  display: none;
+}
+
+.drop-down {
+  display: block;
+  height: 103px;
+}
+
 @media (max-width: 620px) {
     .hot-nav ul {
         padding: 5px;
