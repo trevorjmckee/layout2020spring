@@ -53,12 +53,21 @@ li {
 .hot-item {
     font-size: 18pt;
     color: black;
-    padding: 10px 25px;
+    padding: 10px 20px;
 }
 
 .hot-item:hover {
     background-color: rgb(15,15,15);
     color: white;
+}
+
+@media (max-width: 620px) {
+    .hot-nav ul {
+        padding: 5px;
+    }
+    .hot-item {
+        display: none;
+    }
 }
 
 .main-nav {
