@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Full Site Header
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- styles -->
+        <link rel="stylesheet" href="css/styles.css">
+        <style>[v-cloak] { display: none; }</style>
+
+        <!-- TypeKit -->
+        <link rel="stylesheet" href="https://use.typekit.net/tha4zph.css">
+
+        <!-- icons -->
+        <script src="https://kit.fontawesome.com/00ca8fa005.js" crossorigin="anonymous"></script>
+
+        <!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- menu -->
+        <script>
+			$(document).ready(function() {
+				$(".main-nav-controls").click(function(){
+					$(".main-nav").toggleClass("open");
+                    $(".fa-bars").toggleClass("hide");
+                    $(".fa-times").toggleClass("show");
+                    $(".all-top").toggleClass("fixed");
+                    $("body").toggleClass("open");
+                    $(".box").toggleClass("drop-down");
+				});
+			});
+
+            $(document).ready(function() {
+                $(".login").click(function(){
+                    $(".login-one").toggleClass("hidden");
+                    $(".login-two").toggleClass("shown");
+                });
+            });
+		</script>
+    </head>
+    <body>
+        <div class="all-top">
+            <div class="up-top">
+                <nav class="account-nav">
+                    <div class="login login-one"><a href="#"><i class="fa fa-angle-down" aria-hidden="true"></i>  Hi, Trevor!</a></div>
+                    <div class="login login-two"><a href="#">Sign up here!</a></div>
+                </nav>
+                <div class="masthead">
+                    <div class="site-title"><a href="#" class="site-title">Two Depth</a></div>
+                </div>
+                <div class="main-nav-controls">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+         </div>
+        </div>
+        
+        <div class="box"></div>
+
+        <nav class="hot-nav">
+            <div class="safe-area">
+                <ul>
+                    <li>
+                        <a href="#" class="hot-item">US</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hot-item">World</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hot-item">Politics</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hot-item">Business</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hot-item">Health</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hot-item">Entertainment</a>
+                    </li>
+                </ul>
+             </div>
+        </nav>
+
+        <nav class="main-nav">
+            <ul>
+                <li>
+                    <a href="#" class="top-item">News</a>
+                    <ul>
+                        <li>
+                            <a href="#" class="sub-item">US</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">World</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Politics</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Business</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Health</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Entertainment</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="top-item">Opinion</a>
+                    <ul>
+                        <li>
+                            <a href="#" class="sub-item">Editorials</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Mailbag</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Columnists</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Submit a letter</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="top-item">Entertainment</a>
+                    <ul>
+                        <li>
+                            <a href="#" class="sub-item">Books</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Music</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Movies</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Comics & games</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Television</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Dining</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Theater</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="top-item">Lifestyle</a>
+                    <ul>
+                        <li>
+                            <a href="#" class="sub-item">Advice</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Autos</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Bridal</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Food & cooking</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Drink</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Health</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-item">Home & garden</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="nav-social-media">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </div>
+            <div class="business-information">
+                <p>Oh my gosh are you actually reading this? You have a great eye for detail... or maybe you are just my professor holding this site under scrutiny. Oh well. I don't really care, cause at this point you're just wasting your time. Of course, I had to waste my time writing this... so I guess I'm the real loser... please give me an A...</p>
+            </div>
+        </nav>
+
+        <div id="news-template" v-cloak>
+
+            <div class="title">
+              <div class="safe-area">
+                <h1>{{ story.title }}</h1>
+                <h2 class="subtitle" v-if="story.subtitle">{{ story.subtitle }}</h2>
+              </div>
+            </div>
+  
+            <div class="safe-area">
+            </div>
+  
+          <div class="flex">
+            <section class="component content">
+              <div class="safe-area">
+              
+              <!-- Header -->
+                  <div class="info">
+                      <img v-bind:src="story.image.url" class="story-image">
+                      <span class="caption">{{ story.image.caption }}</span>
+                      <a v-bind:href="story.source.url" class="articleSource">{{ story.source.name }}</a>
+                      <h3>{{ story.date }}</h3>
+                  </div>
+  
+            <!-- Content -->
+                  <hr>
+                  <!-- Teaser -->
+                  <span v-html="story.teaser" class="teaser"></span>
+                  <hr>
+                  <!-- Content -->
+                  <span v-html="story.content" class="content"></span>
+                  <!-- Tags -->
+                  <span v-for="tag in story.tags" class="tags">{{ tag }}</span>
+  
+              </div>
+            </section>
+  
+            <section class="author">
+              <div class="safe-area">
+  
+                <div class="bio">
+                  <img src="assets/author.jpg" class="author-image">
+                  <p><strong>John Doe</strong> is an Editor-in-Chief here at our company. Before his 10 years here, he worked closely with other news companies. Here is some more static content that I want to use to shape this section. And maybe just a bit more for good measure.</p>
+
+                  <div class='sticky'>
+                    <hr class="one">
+                    <div class="social-media">
+                      <a href="#"><i class="fab fa-facebook-square"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                </div>
+               </div>
+              </div>
+  
+              <!-- <div class='sticky'>
+                  <hr class="one">
+                  <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                  </div>
+              </div> -->
+  
+            </section>
+          </div>
+  
+            <!-- Related Stories-->
+            <section class="component">
+              <div class="safe-area">
+  
+                <h4>READ MORE</h4>
+                <hr>
+  
+                <div class="related-stories">
+                    <div class="related-story" v-for="relatedStory in relatedStories" v-on:click="load(relatedStory)">
+                      <div class="related-story-thumbnail"><div class="image-overlay"></div><img v-bind:src="relatedStory.image.url"></div>
+                      <p class="related-story-title">{{ relatedStory.title }}</p>
+                  </div>
+                </div>
+  
+              </div>
+            </section>
+  
+      </div>
+  
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+  
+      <!-- Scripts here are what load the Vue library, and the actual story content. -->
+      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+      <script src="https://abesiemsen.github.io/layout2020spring-resources/projects/news-story-template/data.js"></script>
+      <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+          } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+        </script>
+    </body>
+</html>
