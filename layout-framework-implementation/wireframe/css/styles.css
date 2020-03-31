@@ -1,0 +1,28 @@
+/* Set universal font */
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Set document background color */
+body {
+    background-color: rgb(242, 236, 231);
+}
+
+/* Set max height for items in carousel */
+.carousel-item {
+    max-height: 38rem;
+}
+
+/* Add text shadow to carousel captions */
+.carousel-text-shadow {
+    text-shadow: 0px 4px 4px rgba(0,0,0,0.3);
+}
+
+/* Custom styling of footer links */
+.footer-link {
+    color: white;
+}
+
+.footer-link:hover {
+    color: primary;
+}
