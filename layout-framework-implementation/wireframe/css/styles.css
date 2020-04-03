@@ -26,6 +26,22 @@ body {
     border-color: rgb(20, 44, 109);
 }
 
+/* Rule for max width */
+.mw-800 {
+    max-width: 800px;
+}
+
+.mw-1100 {
+    max-width: 1100px;
+}
+
+/* Style alert */
+.custom-alert {
+    margin-bottom: 0px; 
+    background-color: rgb(179, 22, 22); 
+    border-color: rgb(141, 13, 13);
+}
+
 /* Set max height for items in carousel */
 .carousel-item {
     max-height: 38rem;
@@ -39,8 +55,4 @@ body {
 /* Custom styling of footer links */
 .footer-link {
     color: white;
-}
-
-.footer-link:hover {
-
 }
