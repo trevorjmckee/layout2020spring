@@ -8,7 +8,7 @@ body {
     background-color: rgb(242, 236, 231);
 }
 
-#courgette {
+.courgette {
     font-family: 'Courgette', cursive;
 }
 
@@ -46,9 +46,21 @@ body {
     border-color: rgb(141, 13, 13);
 }
 
+/* Give header background gradient */
+.navbar {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.5) 100%);
+}
+
+/* Move carousel up to top of page */
+.carousel {
+    top: -66px;
+    z-index: -100;
+}
+
 /* Set max height for items in carousel */
 .carousel-item {
-    max-height: 38rem;
+    max-height: 48rem;
 }
 
 /* Add text shadow to carousel captions */
