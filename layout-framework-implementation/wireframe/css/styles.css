@@ -8,6 +8,24 @@ body {
     background-color: rgb(242, 236, 231);
 }
 
+/* adjust for colors */
+.macurh {
+    color: #1F409A;
+}
+
+.bg-macurh {
+    background-color: #1F409A;
+}
+
+.btn-primary {
+    border-color: rgb(20, 44, 109);
+}
+
+.btn-primary:hover {
+    background-color: rgb(20, 44, 109);
+    border-color: rgb(20, 44, 109);
+}
+
 /* Set max height for items in carousel */
 .carousel-item {
     max-height: 38rem;
@@ -24,5 +42,5 @@ body {
 }
 
 .footer-link:hover {
-    color: primary;
+
 }

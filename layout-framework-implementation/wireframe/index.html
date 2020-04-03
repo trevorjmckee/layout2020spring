@@ -32,10 +32,12 @@
         <!-- End alert -->
 
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-macurh">
             <a class="navbar-brand" href="#">
               <img src="assets/MACURH_Logo_Square_White.png" style="width: 40px;" class="mr-3">MACURH
             </a>
+
+            <!-- Don't know what this does vvv -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -160,7 +162,7 @@
           <div class="card-body">
             <h5 class="card-title">How to become part of the MACURH herd</h5>
             <p class="card-text">Is your institution looking to join a student organization that prides itself on leadership, education, growth, family, and tradition?</p>
-            <a class="btn btn-primary btn-sm stretched-link" href="#" role="button">Learn more</a>
+            <a class="btn btn-primary btn-sm stretched-link bg-macurh" href="#" role="button">Learn more</a>
           </div>
         </div>
         <div class="card">
@@ -169,7 +171,7 @@
             <h5 class="card-title">All things OTM</h5>
             <p class="card-text">"Brains, like hearts, go where they are appreciated."</p>
             <p class="card-text"><small class="text-muted"><strong>Robert McNamara</strong>, Former American Secretary of Defense</small></p>
-            <a class="btn btn-primary btn-sm stretched-link" href="#" role="button">Recognize someone</a>
+            <a class="btn btn-primary btn-sm stretched-link bg-macurh" href="#" role="button">Recognize someone</a>
           </div>
         </div>
         <div class="card">
@@ -177,7 +179,7 @@
           <div class="card-body">
             <h5 class="card-title">Contact the regional board</h5>
             <p class="card-text">The Regional Board of Directors is here for you! Feel free to reach out should you need any support, and we'll point you in the right direction.</p>
-            <a class="btn btn-primary btn-sm stretched-link" href="#" role="button">Contact us</a>
+            <a class="btn btn-primary btn-sm stretched-link bg-macurh" href="#" role="button">Contact us</a>
           </div>
         </div>
       </div>
@@ -189,7 +191,7 @@
         <div class="container w-75">
             <h1 class="display-4">MACURH's mission</h1>
             <p class="lead">Consistent with the Articles of Incorporation of NACURH Inc., the purpose of MACURH shall be to promote student intellectual, educational, cultural, physical, and social welfare; to design and facilitate programs and informational services; to provide an avenue for assisting students to achieve fuller participation in the life of the college community and to extend the influence and good name of our organization everywhere.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            <a class="btn btn-primary btn-lg bg-macurh" href="#" role="button">Learn more</a>
         </div>
     </div>
     <!-- End Jumbotron -->
@@ -209,14 +211,14 @@
           <div class="card-body">
             <h5 class="card-title">#MemberSchoolMonday</h5>
             <p class="card-text">Want your institution to be recognized on our social media? Fill out the form. All member schools are welcomed to submit!</p>
-            <a href="#" class="btn btn-primary">Fill me out!</a>
+            <a href="#" class="btn btn-primary bg-macurh">Fill me out!</a>
           </div>
         </div>
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">#FamilyFriday</h5>
             <p class="card-text">You are part of the MACURH herd. Now, get to know some more people by letting us give you a shoutout on social media! Fill out the form below.</p>
-            <a href="#" class="btn btn-primary">Fill me out!</a>
+            <a href="#" class="btn btn-primary bg-macurh">Fill me out!</a>
           </div>
         </div>
      </div>
@@ -227,8 +229,35 @@
 
     <!-- End embedded social media -->
 
+    <!-- Call to action -->
+    <div class="container-fluid bg-macurh text-white py-5">
+      <div class="container">
+        <h2>Interested in joining us?</h2>
+      </div>
+      <form class="w-75 mx-auto">
+        <div class="form-row">
+          <div class="col-4">
+            <input type="text" class="form-control" placeholder="Name">
+          </div>
+          <div class="col-4">
+            <input type="text" class="form-control" placeholder="Institutional email">
+          </div>
+          <div class="form-group col-3">
+            <select id="inputState" class="form-control">
+              <option selected>I am a...</option>
+              <option>Student Affairs Professional</option>
+              <option>Student</option>
+            </select>
+          </div>
+          <input class="form-group col-1 btn btn-light" type="submit" value="Submit">
+        </div>
+        <small id="emailHelp" class="form-text">Our director will reach out to you with more information about how to join.</small>
+      </form>
+    </div>
+
     <!-- Footer -->
     <div class="container-fluid bg-dark text-white py-5">
+      <div class="container w-75">
       <!-- Links -->
       <div class="d-flex justify-content-center mb-4">
         <ul class="nav">
@@ -277,19 +306,24 @@
           </li>
         </ul>
      </div>
-     <hr class="border-white w-75">
+
+     <hr class="border-white">
+
      <!-- Logo and social media -->
-    <div class="container w-75">
+    <div class="container">
       <div class="row align-items-center">
         <div class="col-sm">
           <img src="assets/MACURH_Logo_02.png" class="img-fluid" alt="MACURH official logo">
         </div>
         <div class="col-sm text-center">
+          <!-- Call to action -->
+          <div class="container w-50">
+          </div>
         </div>
       </div>
     </div>
-    <hr class="border-white w-75">
-    <div class="d-flex w-75 mx-auto">
+    <hr class="border-white">
+    <div class="d-flex">
       <div class="container-fluid">
         <p class="h6">Copyright &copy 2020 National Association of College and University Residence Halls</p>
         <p class="h6 text-muted">Terms of Use | Privacy Policy</p>
@@ -299,6 +333,7 @@
         <i class="fa fa-instagram mr-4" aria-hidden="true"></i>
         <i class="fa fa-twitter" aria-hidden="true"></i>
       </div>
+    </div>
     </div>
     </div>
     <!-- End footer -->
