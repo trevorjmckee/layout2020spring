@@ -57,19 +57,18 @@ body {
 
 /* Give header background gradient */
 .navbar {
-    background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.7) 100%);
 }
 
 /* Move carousel up to top of page */
 .carousel {
-    top: -82px;
+    top: -98px;
     z-index: 0;
 }
 
 .carousel-image {
     object-fit: cover;
-    height: 70vh;
+    height: 57rem;
 }
 
 /* Add shadow gradient from bottom of carousel */
@@ -88,10 +87,14 @@ body {
     text-shadow: 0px 4px 8px rgba(0,0,0,0.3);
 }
 
-/* Move up What is MACURH section */
-.adjust-82 {
-    position: relative;
-    top: -82px;
+/* Adjust hero label */
+.hero-label {
+    background-color: rgba(31,64,154,0.4);
+    background: radial-gradient(circle, rgba(31,64,154,0.3) 0%, rgba(31,64,154,0.5) 100%);
+    top: -1010px;
+    height: 57rem;
+    padding-top: 200px;
+    margin-bottom: -1000px;
 }
 
 /* Make each square full size in call-to-action */
@@ -131,4 +134,12 @@ body {
 /* Custom styling of footer links */
 .footer-link {
     color: white;
+}
+
+
+
+
+
+.svg1 {
+    margin-top: -1300px;
 }
