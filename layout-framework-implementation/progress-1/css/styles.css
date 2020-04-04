@@ -31,8 +31,8 @@ body {
 }
 
 /* Rule for max width */
-.mw-800 {
-    max-width: 800px;
+.mw-700 {
+    max-width: 700px;
 }
 
 .mw-950 {
@@ -55,26 +55,27 @@ body {
     z-index: 1;
 }
 
-/* Give header background gradient */
+/* Style navbar */
 .navbar {
-    /* background: linear-gradient(0deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.7) 100%); */
     margin-top: -1px;
     border-bottom: solid 1px rgb(184, 184, 184);
 }
 
+/* Position and style hero */
 .hero {
     position: relative;
     top: -98px;
-    height: 50rem;
-    padding: 200px 30px 100px 30px;
+    height: 53rem;
+    padding: 225px 30px 100px 30px;
     margin-bottom: -98px;
     background: linear-gradient(45deg, rgb(22, 45, 107) 0%, rgb(70, 101, 187) 100%)
 }
 
-.bg-gradient {
-    height: 500px;
-    background: linear-gradient(0deg, rgba(31,64,154,0) 0%, rgba(31,64,154,1) 100%);
-    margin-bottom: -500px;
+@media (max-width: 992px) {
+    .hero {
+        height: auto;
+        padding-top: 150px;
+    }
 }
 
 /* Make each square full size in call-to-action */
