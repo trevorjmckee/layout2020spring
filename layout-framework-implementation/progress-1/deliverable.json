@@ -1,0 +1,8 @@
+{
+    "entrypoints": [
+      {
+        "name": "Main",
+        "file": "index.php"
+      }
+    ]
+  }
