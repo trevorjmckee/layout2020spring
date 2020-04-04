@@ -12,6 +12,10 @@ body {
     font-family: 'Courgette', cursive !important;
 }
 
+.special-elite {
+    font-family: 'Special Elite', cursive;
+}
+
 /* adjust for colors */
 .macurh {
     color: #1F409A;
@@ -57,44 +61,15 @@ body {
 
 /* Give header background gradient */
 .navbar {
-    background: linear-gradient(0deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.7) 100%);
+    /* background: linear-gradient(0deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.7) 100%); */
+    margin-top: -1px;
+    border-bottom: solid 1px rgb(184, 184, 184);
 }
 
-/* Move carousel up to top of page */
-.carousel {
-    top: -98px;
-    z-index: 0;
-}
-
-.carousel-image {
-    object-fit: cover;
-    height: 57rem;
-}
-
-/* Add shadow gradient from bottom of carousel */
-/* .carousel-item:after {
-    z-index: 999999;
+.hero {
     position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 500px;
-    background: linear-gradient(0deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.5) 100%);
-} */
-
-/* Add text shadow to carousel captions */
-.carousel-text-shadow {
-    text-shadow: 0px 4px 8px rgba(0,0,0,0.3);
-}
-
-/* Adjust hero label */
-.hero-label {
-    background-color: rgba(31,64,154,0.4);
-    background: radial-gradient(circle, rgba(31,64,154,0.3) 0%, rgba(31,64,154,0.5) 100%);
-    top: -1010px;
-    height: 57rem;
-    padding-top: 200px;
-    margin-bottom: -1000px;
+    top: -98px;
+    padding: 200px 30px;
 }
 
 /* Make each square full size in call-to-action */
@@ -134,12 +109,4 @@ body {
 /* Custom styling of footer links */
 .footer-link {
     color: white;
-}
-
-
-
-
-
-.svg1 {
-    margin-top: -1300px;
 }
