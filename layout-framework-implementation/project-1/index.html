@@ -19,99 +19,20 @@
     <script src="https://use.fontawesome.com/0d3e9d23b6.js"></script>
 
     <title>MACURH</title>
+
+    <!-- Import header and footer -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script> 
+      $(function(){
+        $("#header").load("header.html"); 
+        $("#footer").load("footer.html"); 
+      });
+    </script>
   </head>
 
   <body>
-  <header>
-    <!-- Alert -->
-    <div class="alert alert-danger alert-dismissible rounded-0 fade show custom-alert text-white" role="alert">
-        NACURH 2020 | Annual Conference has been cancelled due to COVID-19. <a href="#" class="alert-link text-white">Stay up to date here.</a>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-    </div>
-    <!-- End alert -->
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-gradient px-5 pt-4">
-        <a class="navbar-brand" href="#">
-          <img src="assets/MACURH_Logo_Square_White.png" style="width: 40px;" class="mr-3">MACURH
-        </a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                About
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="about/governing-documents.html">Governing Documents</a>
-                <a class="dropdown-item" href="about/standards-program.html">Standards Program</a>
-                <a class="dropdown-item" href="about/committees-and-taskforces.html">Committees and Taskforces</a>
-                <a class="dropdown-item" href="about/member-schools.html">Member Schools</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="about/join-us.html">Join us</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Positions
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="positions/ncc.html">NCCs</a>
-                <a class="dropdown-item" href="positions/president.html">Presidents</a>
-                <a class="dropdown-item" href="positions/nrhh.html">NRHH Reps</a>
-                <a class="dropdown-item" href="positions/programming.html">Programming Reps</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="positions/alumni.html">Alumni | FARM</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Advisors
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="positions/advisor.html">Resources</a>
-              <a class="dropdown-item" href="positions/advisor-blog.html">Advisor Blog</a>
-              </div>
-          </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              NRHH
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="nrhh/policy-book.html">Policy Book</a>
-              <a class="dropdown-item" href="nrhh/resources.html">Resources</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="nrhh/otms.html">Of the Months (OTMs)</a>
-              </div>
-          </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Contact
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="contact/regional-board-of-directors.html">Regional Board of Directors</a>
-              <a class="dropdown-item" href="contact/listservs.html">Listservs</a>
-              <a class="dropdown-item" href="contact/faqs.html">FAQs</a>
-              </div>
-          </li>
-          </ul>
-          <!-- <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form> -->
-        </div>
-    </nav>
-    <!-- End navigation -->
-    </header>
+    <!-- Load header -->
+    <div id="header"></div>
 
     <!-- Carousel -->
     <div id="carouselLanding" class="carousel slide carousel-fade" data-ride="carousel">
@@ -321,94 +242,8 @@
       </div>
       <!-- End grid -->
 
-      <!-- Footer -->
-    <div class="container-fluid bg-dark text-white py-5">
-      <div class="container">
-      <!-- Links -->
-      <div class="d-flex justify-content-center mb-4">
-      <ul class="nav row">
-          <li class="nav-item col">
-          <h5 class="text-muted text-uppercase">About</h5>
-          <ul class="nav flex-column ml-n3 mr-4 mb-5">
-              <li class="nav-item"><a class="nav-link footer-link" href="#">Governing Documents</a></li>
-              <li class="nav-item"><a class="nav-link footer-link" href="#">Standards Program</a></li>
-              <li class="nav-item"><a class="nav-link footer-link" href="#">Committees & Taskforces</a></li>
-              <li class="nav-item"><a class="nav-link footer-link" href="#">Member Schools</a></li>
-              <li class="nav-item"><a class="nav-link footer-link" href="#">Join us</a></li>
-          </ul>
-          </li>
-          <li class="nav-item col">
-          <h5 class="text-muted text-uppercase">Positions</h5>
-          <ul class="nav flex-column ml-n3 mr-4 mb-5">
-              <li class="nav-item"><a class="nav-link footer-link" href="#">NCCs</a></li>
-              <li class="nav-item"><a class="nav-link footer-link" href="#">Presidents</a></li>
-              <li class="nav-item"><a class="nav-link footer-link" href="#">NRHH Reps</a></li>
-              <li class="nav-item"><a class="nav-link footer-link" href="#">Programming Reps</a></li>
-              <li class="nav-item"><a class="nav-link footer-link" href="#">Alumni | Farm</a></li>
-          </ul>
-          </li>
-          <li class="nav-item col">
-          <h5 class="text-muted text-uppercase">Advisors</h5>
-          <ul class="nav flex-column ml-n3 mr-4 mb-5">
-              <li class="nav-item"><a class="nav-link footer-link" href="#">Resources</a></li>
-              <li class="nav-item"><a class="nav-link footer-link" href="#">Advisor Blog</a></li>
-          </ul>
-          </li>
-          <li class="nav-item col">
-          <h5 class="text-muted text-uppercase">NRHH</h5>
-          <ul class="nav flex-column ml-n3 mr-4 mb-5">
-              <li class="nav-item"><a class="nav-link footer-link" href="#">Policy Book</a></li>
-              <li class="nav-item"><a class="nav-link footer-link" href="#">Resources</a></li>
-              <li class="nav-item"><a class="nav-link footer-link" href="#">Of the Months (OTMs)</a></li>
-          </ul>
-          </li>
-          <li class="nav-item col">
-          <h5 class="text-muted text-uppercase">Contact</h5>
-          <ul class="nav flex-column ml-n3 mr-4 mb-5">
-              <li class="nav-item"><a class="nav-link footer-link" href="#">Regional Board</a></li>
-              <li class="nav-item"><a class="nav-link footer-link" href="#">Listservs</a></li>
-              <li class="nav-item"><a class="nav-link footer-link" href="#">FAQs</a></li>
-          </ul>
-          </li>
-      </ul>
-      </div>
-    </div>
-
-    </div>
-
-    <div class="container-fluid mt-4">
-      <!-- Logo-->
-      <div class="container">
-      <div class="row">
-          <div class="col-sm">
-          <img src="assets/MACURH_Logo_01.png" class="img-fluid" alt="MACURH official logo">
-          </div>
-          <div class="col-sm text-center">
-          <!-- Call to action -->
-          <div class="container w-50">
-          </div>
-          </div>
-      </div>
-      </div>
-
-      <hr class="border-white">
-
-      <!-- Copyright and social media -->
-      <div class="container mb-3">
-      <div class="row">
-          <div class="col-md-9">
-          <p class="h6">Copyright &copy 2020 National Association of College and University Residence Halls</p>
-          <p class="small text-muted"><a href="terms-of-use.html" class="text-muted">Terms of Use</a> | <a href="privacy-policy.html" class="text-muted">Privacy Policy</a></p>
-          </div>
-          <div class="col h2 text-right">
-          <a href="https://www.facebook.com/MidwestAffiliate/" alt="MACURH Facebook Page" target="_blank"><i class="fa fa-facebook-official macurh mr-4" aria-hidden="true"></i></a>
-          <a href="https://www.instagram.com/macurh_herd/?hl=en" alt="MACURH Instagram Page" target="_blank"><i class="fa fa-instagram macurh mr-4" aria-hidden="true"></i></a>
-          <a href="https://twitter.com/macurh?lang=en" alt="MACURH Twitter Page" target="_blank"><i class="fa fa-twitter macurh" aria-hidden="true"></i></a>
-          </div>
-      </div>
-      </div>
-    </div>
-    <!-- End footer -->
+      <!-- Load footer -->
+      <div id="footer"></div>
     </div>
 
     <!-- JavaScript -->
