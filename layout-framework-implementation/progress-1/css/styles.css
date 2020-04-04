@@ -65,7 +65,7 @@ body {
 .hero {
     position: relative;
     top: -98px;
-    height: 53rem;
+    height: 54rem;
     padding: 225px 30px 100px 30px;
     margin-bottom: -98px;
     background: linear-gradient(45deg, rgb(22, 45, 107) 0%, rgb(70, 101, 187) 100%)
