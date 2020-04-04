@@ -59,6 +59,11 @@ body {
 .navbar {
     margin-top: -1px;
     border-bottom: solid 1px rgb(184, 184, 184);
+    background: none;
+}
+
+.navbar-opaque {
+    background: linear-gradient(45deg, rgb(22, 45, 107) 0%, rgb(70, 101, 187) 100%);
 }
 
 /* Position and style hero */
@@ -68,7 +73,7 @@ body {
     height: 54rem;
     padding: 225px 30px 100px 30px;
     margin-bottom: -98px;
-    background: linear-gradient(45deg, rgb(22, 45, 107) 0%, rgb(70, 101, 187) 100%)
+    background: linear-gradient(45deg, rgb(22, 45, 107) 0%, rgb(70, 101, 187) 100%);
 }
 
 @media (max-width: 992px) {
