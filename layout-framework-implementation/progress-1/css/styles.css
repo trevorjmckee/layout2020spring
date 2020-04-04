@@ -8,21 +8,17 @@ body {
     background-color: rgb(242, 236, 231);
 }
 
-.courgette {
-    font-family: 'Courgette', cursive !important;
-}
-
 .special-elite {
     font-family: 'Special Elite', cursive;
 }
 
 /* adjust for colors */
 .macurh {
-    color: #1F409A;
+    color: rgb(31,64,154);
 }
 
 .bg-macurh {
-    background-color: #1F409A;
+    background-color: rgb(31,64,154);
 }
 
 .btn-primary {
@@ -69,7 +65,16 @@ body {
 .hero {
     position: relative;
     top: -98px;
-    padding: 200px 30px;
+    height: 50rem;
+    padding: 200px 30px 100px 30px;
+    margin-bottom: -98px;
+    background: linear-gradient(45deg, rgb(22, 45, 107) 0%, rgb(70, 101, 187) 100%)
+}
+
+.bg-gradient {
+    height: 500px;
+    background: linear-gradient(0deg, rgba(31,64,154,0) 0%, rgba(31,64,154,1) 100%);
+    margin-bottom: -500px;
 }
 
 /* Make each square full size in call-to-action */
