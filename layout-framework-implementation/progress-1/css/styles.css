@@ -30,6 +30,10 @@ body {
     border-color: rgb(20, 44, 109);
 }
 
+.bg-gradient {
+    background: linear-gradient(45deg, rgb(22, 45, 107) 0%, rgb(70, 101, 187) 100%);
+}
+
 /* Rule for max width */
 .mw-700 {
     max-width: 700px;

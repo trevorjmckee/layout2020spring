@@ -126,13 +126,26 @@
           </form> -->
         </div>
     </nav>
-    <!-- End navigation -->
+    <!-- End navigation -->  
+
+    <div role="alert" aria-live="assertive" aria-atomic="true" class="toast position-fixed" style="right: 30px; bottom: 20px; opacity: 1; z-index: 9999999;">
+      <div class="toast-header">
+        <img src="assets/MACURH_Logo_Square_Blue.png" class="mr-2" alt="..." style="width: 24px;">
+        <strong class="mr-auto macurh">MACURH</strong>
+        <button type="button" class="ml-2 mb-1 close toast-close" data-dismiss="toast" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="toast-body">
+        Hello! Welcome to the new MACURH website. Have any feeback? <a href="mailto:ma_publications@nacurh.org">Shoot us an email!</a>
+      </div>
+    </div>
 
     <!-- Hero section -->
     <div class="container-fluid hero">
       <div class="row mx-auto mw-1100">
         <div class="col-lg-6 text-white">
-          <h1 class="display-3 mb-3 special-elite">Welcome to your herd in the midwest.</h1>
+          <h1 class="display-3 mb-3 special-elite">Welcome to your herd in the Midwest.</h1>
           <p><strong>MACURH</strong>, the <strong>Midwest Affiliate of College and University Residence Halls</strong> is a student-run organization working to promote and improve student life on college and university campuses across the region. We aim to bring together students who live in residence halls on college campuses to share ideas, resources, and best practices to improve their residential communities.</p>
         </div>
         <div class="col-6 p-0 mt-n4 d-none d-lg-block">
@@ -188,7 +201,7 @@
     <!-- End quick links -->
 
     <!-- Jumbotron -->
-    <div class="jumbotron jumbotron-fluid bg-macurh text-white">
+    <div class="jumbotron jumbotron-fluid bg-gradient text-white">
         <div class="container mw-950 px-5">
             <h1 class="display-4 special-elite">Our mission</h1>
             <p class="lead">Consistent with the Articles of Incorporation of NACURH Inc., the purpose of MACURH shall be to promote student intellectual, educational, cultural, physical, and social welfare; to design and facilitate programs and informational services; to provide an avenue for assisting students to achieve fuller participation in the life of the college community and to extend the influence and good name of our organization everywhere.</p>
@@ -240,7 +253,7 @@
           </div>
 
           <!-- Form to the right column -->
-          <div class="col-lg align-self-center full-size bg-glare">
+          <div class="col-lg align-self-center full-size bg-gradient bg-glare">
             <h2 class="pt-5 pb-3 text-center">Interested in<br><strong>joining the herd?</strong></h2>
             <form class="w-75 m-auto">
 
@@ -388,10 +401,24 @@
         $(window).scroll(function(){
           if ($(window).scrollTop() > 50){
             $('.navbar').addClass("navbar-opaque");
+            // $('.navbar').removeClass("py-4");
+            // $('.navbar').addClass("py-2");
           } else {
             $('.navbar').removeClass("navbar-opaque");
+            // $('.navbar').removeClass("py-2");
+            // $('.navbar').addClass("py-4");
           }
         });
+      });
+    </script>
+
+    <!-- Hide toast on click -->
+    <script>
+      $(document).ready(function(){
+        $('.toast-close').click(function(){
+          $('.toast').addClass('d-none')
+        }
+      );
       });
     </script>
   </body>
