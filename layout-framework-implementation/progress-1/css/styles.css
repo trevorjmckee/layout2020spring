@@ -1,9 +1,11 @@
 /* Set universal font */
+
 * {
     font-family: 'Open Sans', sans-serif;
 }
 
 /* Set document background color */
+
 body {
     background-color: rgb(242, 236, 231);
 }
@@ -13,12 +15,13 @@ body {
 }
 
 /* adjust for colors */
+
 .macurh {
-    color: rgb(31,64,154);
+    color: rgb(31, 64, 154);
 }
 
 .bg-macurh {
-    background-color: rgb(31,64,154);
+    background-color: rgb(31, 64, 154);
 }
 
 .btn-primary {
@@ -35,6 +38,7 @@ body {
 }
 
 /* Rule for max width */
+
 .mw-700 {
     max-width: 700px;
 }
@@ -48,18 +52,21 @@ body {
 }
 
 /* Style alert */
+
 .custom-alert {
-    margin-bottom: 0px; 
-    background-color: rgb(179, 22, 22); 
+    margin-bottom: 0px;
+    background-color: rgb(179, 22, 22);
     border-color: rgb(141, 13, 13);
 }
 
 /* Adjust navbar z-index */
+
 .navbar {
     z-index: 1;
 }
 
 /* Style navbar */
+
 .navbar {
     margin-top: -1px;
     border-bottom: solid 1px rgb(184, 184, 184);
@@ -71,6 +78,7 @@ body {
 }
 
 /* Position and style hero */
+
 .hero {
     position: relative;
     top: -98px;
@@ -87,13 +95,19 @@ body {
     }
 }
 
+.height-auto {
+    height: auto;
+}
+
 /* Make each square full size in call-to-action */
+
 .full-size {
     width: 100%;
     height: 500px;
 }
 
 /* Hide image on small screens */
+
 @media (max-width: 700px) {
     .display-none-sm {
         display: none;
@@ -101,12 +115,13 @@ body {
 }
 
 /* Add a glare behind form */
+
 .bg-glare {
     overflow: hidden;
 }
 
 .bg-glare:after {
-    content:'';
+    content: '';
     position: absolute;
     top: 0px;
     left: -100%;
@@ -122,6 +137,7 @@ body {
 }
 
 /* Custom styling of footer links */
+
 .footer-link {
     color: white;
 }
