@@ -70,10 +70,6 @@ body {
 .navbar {
     margin-top: -1px;
     border-bottom: solid 1px rgb(184, 184, 184);
-    background: none;
-}
-
-.navbar-opaque {
     background: linear-gradient(45deg, rgb(22, 45, 107) 0%, rgb(70, 101, 187) 100%);
 }
 
@@ -99,13 +95,13 @@ body {
     height: auto;
 }
 
-.rbd-hero {
+.secondary-hero {
     text-align: center;
-    padding-top: 150px;
+    padding-top: 175px;
 }
 
 @media (max-width: 992px) {
-    .rbd-hero {
+    .secondary-hero {
         text-align: left;
     }
 }
