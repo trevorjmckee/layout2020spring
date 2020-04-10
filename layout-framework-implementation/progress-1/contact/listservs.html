@@ -20,7 +20,7 @@
     <script src="https://use.fontawesome.com/0d3e9d23b6.js"></script>
 
     <!-- Site title -->
-    <title>Committees & Taskforces | MACURH</title>
+    <title>Listservs | MACURH</title>
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -58,7 +58,7 @@
                 </li>
 
                 <!-- About -->
-                <li class="nav-item dropdown active">
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         About
                     </a>
@@ -112,7 +112,7 @@
                 </li>
 
                 <!-- Contact -->
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Contact
                     </a>
@@ -123,10 +123,6 @@
                     </div>
                 </li>
             </ul>
-            <!-- <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form> -->
         </div>
     </nav>
     <!-- End navigation -->
@@ -135,7 +131,7 @@
     <div class="container-fluid hero height-auto pb-5 secondary-hero">
         <div class="row mx-auto">
             <div class="text-white mw-700 mx-auto">
-                <h1 class="display-3 mb-3 special-elite">Committees & Taskforces</h1>
+                <h1 class="display-3 mb-3 special-elite">Join a listserv!</h1>
             </div>
         </div>
     </div>
@@ -149,68 +145,83 @@
     </div>
     <!-- End social nav -->
 
-    <!-- Committees -->
-    <div class="container my-5 text-center">
-        <h2 class="display-4 special-elite mb-n3">Committees</h2>
-    </div>
+    <!-- Listserv form -->
     <div class="container mw-700 my-5">
-        <ul class="list-unstyled">
-            <li class="pb-4">
-                <p><strong>Recognition & Service Engagement Committee</strong></p>
-                <p>The Recognition & Service Engagement Committee works to provide and create new and creative ways for member institutions to implement recognition and service initiatives. They will also work to recognize active individuals within the region. Questions about this committee? Contact the RBD Liason at <a href="mailto:ma_adnrhh@nacurh.org">ma_adnrhh@nacurh.org</a>.</p>
-            </li>
-            <li class="pb-4">
-                <p><strong>Legislative & Development (L&D) Committee</strong></p>
-                <p>The Legislation & Development Committee works to review, recommend, and write regional legislation. They will also work to help review award bids submitted by member institutions for regional conferences. This year, the committee will work with the ADAF to complete a full audit of the MACURH Policy Book to check for discrepancies within policy as well as formatting and grammatical errors. Questions about this committee? Contact the RBD Liaison at <a href="mailto:ma_adaf@nacurh.org">ma_adaf@nacurh.org</a>.</p>
-            </li>
-            <li class="pb-4">
-                <p><strong>Advocacy Committee</strong></p>
-                <p>The Advocacy Committee works to establish a regional advocacy initiative and provide resources and opportunities for regional participation in advocacy efforts. The committee will work closely with the Regional Director to accomplish whatever goals the group sets for the year. Questions about this committee? Contact the RBD Liaison at <a href="mailto:ma_director@nacurh.org">ma_director@nacurh.org</a>.</p>
-            </li>
-            <li class="pb-4">
-                <p><strong>Of The Month (OTM) Committee</strong></p>
-                <p>The OTM Committee works to meet and review regional OTMs and assist with the OTM process. They will also work to develop initiatives to help grow monthly OTM submissions. Questions about this committee? Contact the RBD Liaison at <a href="mailto:ma_adnrhh@nacurh.org">ma_adnrhh@nacurh.org</a>.</p>
-            </li>
-        </ul>
+        <form class="needs-validation" novalidate>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationCustom01">First Name</label>
+                    <input type="text" class="form-control" id="validationCustom01" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="validationCustom02">Last Name</label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationCustom02">Email</label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="validationCustom02">Institution</label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">NCCs</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Presidents</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">NRHH Reps</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                    <label class="form-check-label" for="inlineCheckbox4">Advisors</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                    <label class="form-check-label" for="inlineCheckbox5">Alumni</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">
+                    <label class="form-check-label" for="inlineCheckbox6">Programming Reps</label>
+                </div>
+            </div>
+
+            <small id="listservHelpBlock" class="form-text text-muted">
+                For NCC, NRHH, President, & Programming Listservs, you <strong>must</strong> have a positonal email that is transitioned each year. If you do not have one, you must submit a special request below.
+            </small>
+
+            <div class="form-row my-3">
+                <div class="col mb-3">
+                    <label>If you are submitting a special request to use a personal email, please state your reason</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
     </div>
-    <!-- End committees -->
-
-    <!-- Taskforces -->
-    <div class="container my-5 text-center">
-        <h2 class="display-4 special-elite mb-n3">Taskforces</h2>
-    </div>
-    <div class="container mw-700 my-5">
-        <ul class="list-unstyled">
-            <li class="pb-4">
-                <p><strong>Advisor Involvement Task Force</strong></p>
-                <p>This task force will look at advisor opportunities at conferences and throughout the year, and will recommend initiatives and incentives to increase advisor participation. Topic will include advisor socials at conferences, advisor chats, professional development opportunities, ART sessions, special chats, and round table discussions. Advisors and students are welcome to join!</p>
-            </li>
-            <li class="pb-4">
-                <p><strong>Educational Session Standardized Rubric Task Force</strong></p>
-                <p>This task force will work to advance and standardize regional practices regarding educational sessions. This will be accomplished by creating resources for educational session planning, creating a standardized grading rubric for regional educational session submissions, and evaluating the utility of passive educational sessions in the region.</p>
-            </li>
-            <li class="pb-4">
-                <p><strong>MACURH On Campus Task Force</strong></p>
-                <p>This task force will work to increase tangible benefits of affiliating with NACURH within MACURH beyond conferences through evaluation of services (i.e. Positional & Special Chats, MACURH Standards Program, RBD On Campus), resource creation (i.e. NCC-IT Powerpoints, training resources, MACURH crash-course presentations), and more! Focus areas will include engagement with member institutions, creating a stronger MACURH presence on campuses, and giving representatives the tools to educate others about MACURH and NACURH.</p>
-            </li>
-            <li class="pb-4">
-                <p><strong>Philanthropy Task Force</strong></p>
-                <p>This task force will work to evaluate the current Regional Philanthropy (Pencils of Promise) and its regional initiatives, create opportunities for engagement throughout the year, promote ways to publicize the Regional Philanthropy, and determine the future of philanthropy within MACURH. If you're passionate about service and the future of the region, this task force is for you!</p>
-            </li>
-            <li class="pb-4">
-                <p><strong>Scholarships & Grants Task Force</strong></p>
-                <p>This task force will work to develop new scholarships & grants for the members of MACURH utilizing the Scholarships & Grants Fund section in the MACURH Policy Book. They will also determine recipients of previously established scholarship opportunities such as the MACURH Programming Grant and the RLC Delegation Grant.</p>
-            </li>
-            <li class="pb-4">
-                <p><strong>Welcoming & Hype Task Force</strong></p>
-                <p>This task force will work on welcoming new members and revamping introductory resources for the newest and oldest members of our herd. These initiatives will include discussions about how to keep the region enthusiastic and provide a welcoming environment to anyone who joins MACURH and attends conferences. Initiatives will include social media posts, cheers, and chants.</p>
-            </li>
-        </ul>
-    </div>
-    <!-- End taskforces -->
-
-
-
+    <!-- Listserv form end -->
 
     <!-- Footer -->
     <div class="container-fluid bg-dark text-white py-5">
@@ -313,14 +324,26 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    <!-- Hide toast on click -->
+
+    <!-- Disable form submissions if there are invalid fields -->
     <script>
-        $(document).ready(function () {
-            $('.toast-close').click(function () {
-                $('.toast').addClass('d-none')
-            }
-            );
-        });
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
     </script>
 </body>
 
